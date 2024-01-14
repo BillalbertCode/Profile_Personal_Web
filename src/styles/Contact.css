@@ -1,0 +1,33 @@
+.all {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 60px 20px;
+    width: 90%;
+}
+.informacion{
+    border: #c4c4c4 solid 2px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.contact-section {
+    width: 90%;
+}
+
+div.dark .message-pregunta {
+    color: #c4c4c4;
+}
+
+div.light .message-pregunta {
+    color: #8f8f8f;
+}
+
+@media screen and (max-width:412px) {
+    .all {
+        flex-flow: column nowrap;
+        justify-content: center;
+        width: 90%;
+    }
+    .contact-section {
+       margin-top: 40px;
+    }
+}

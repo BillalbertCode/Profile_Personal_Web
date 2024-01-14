@@ -1,0 +1,82 @@
+.container.About {
+    padding: 30px;
+    max-width: none;
+}
+
+div.light .container.About {
+    background-color: #fff;
+}
+
+div.dark .container.About {
+    background: #000215;
+}
+
+.container.About h2 {
+    scroll-margin-top: 100px;
+}
+
+.container.About .habilidades {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: -20px;
+    box-sizing: border-box;
+
+}
+
+.container.About .habilidades svg {
+    width: 3em;
+    height: auto;
+}
+
+.container.About .habilidades h3 {
+    font-size: 1em;
+    font-family: "Exo 2";
+}
+
+.container.About .habilidades .habilidades-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 4px;
+    margin: 4px;
+    border: 2px solid currentColor;
+    box-sizing: border-box;
+}
+
+.container.About .experiencia h3 {
+    font-size: 1.1em;
+}
+
+.container.About .experiencia h4 {
+    font-size: 0.9em;
+}
+
+.container.About blockquote {
+    text-align: center;
+    font-style: italic;
+    font-family: "Montserrat";
+    font-size: small;
+}
+
+.container.About span {
+    font-weight: bold;
+}
+
+div.dark .container.About li a {
+    color: black;
+}
+
+div.light .list-group-item {
+    background-color: beige;
+}
+
+div.dark .list-group-item {
+    background-color: #fff;
+}
+
+@media screen and (max-width: 350px) {
+    .container.About .habilidades {
+        flex-flow: row wrap;
+    }
+}

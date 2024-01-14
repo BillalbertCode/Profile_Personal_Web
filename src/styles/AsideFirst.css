@@ -1,0 +1,60 @@
+.container.asidefirst {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 7em;
+    margin-bottom: 60px;
+}
+
+.Resume {
+    width: 40%;
+}
+
+.Resume>h2 {
+    font-weight: 100;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.Resume>h4 {
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+.Resume>p {
+    font-size: 1em;
+}
+
+div.dark .Resume>p {
+    color: #cfcfcf;
+}
+
+div.light .Resume>p {
+    color: #2b2b2b;
+}
+
+.BlockCode {
+    width: 40%;
+    height: 500px;
+    background-color: #000;
+    border-radius: 6px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+@media screen and (max-width: 412px) {
+    .container.asidefirst {
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    .Resume.container{
+        margin-bottom: 15px;
+    }
+    .Resume {
+        width:auto;
+    }
+    .BlockCode{
+        width: 90%;
+        border:1px solid #fff;
+    }
+}

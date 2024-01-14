@@ -1,0 +1,27 @@
+* {
+    transition: background-color 0.5s ease;
+}
+div.dark,div.light{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+div.dark {
+    background-color: black;
+    color: #fff;
+}
+div.dark a {
+    color: #fff;
+}
+
+div.light {
+    background-color: #f5f5dc;
+    color: #000;
+}
+
+div.light a {
+    color: #000;
+}
+.alert{
+    position: absolute;
+}

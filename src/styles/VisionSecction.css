@@ -1,0 +1,89 @@
+.principal.vision{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+div.dark .principal.vision{
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,14,45,1) 100%);
+}
+div.light .principal.vision{
+    background: linear-gradient(180deg, rgba(245,245,220,1) 53%, rgba(241,214,182,1) 100%);
+}
+.principal.vision h2{
+    font-family: "Montserrat", "Open Sans";
+    font-size: 36px;
+    margin-bottom:50px ;
+
+}
+.visionFirst{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border-bottom: solid  3px;
+    margin:30px 15px;
+}
+div.dark .visionFirst{
+    border-image: radial-gradient(circle, rgba(255,184,0,1) 0%, rgba(82, 66, 30, 0) 100%); 
+    border-image-slice: 1;
+}
+div.light .visionFirst{
+    border-image: radial-gradient(circle, rgb(255, 187, 0) 0%, rgba(255, 255, 255, 0.541) 100%); 
+    border-image-slice: 1;
+}
+.visionFirst > p {
+    width: 35%;
+    font-size: 1.05em;
+    text-align:justify;
+}
+.vision.main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.vision.main > h3 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+}
+
+.vision.item {
+    width: auto;
+    font-size: 20px;
+    font-family: "Montserrat","Open Sans";
+}
+.vision.item .bi {
+    width: 75px;
+    height: auto;
+}
+.vision.item > .bi-pc-display{
+    color: #004aad;
+}
+.vision.aside{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+}
+.vision.aside > p {
+    font-size: large;
+    width: 70%;
+}
+.vision.item.aside-items{
+    width: initial;
+}
+.vision.item.aside-items .bi{
+    margin: 10px 20px;
+}
+@media screen and (max-width:412px) {
+    .visionFirst{
+        flex-flow: column nowrap ;
+    }
+    .visionFirst > p{
+        text-align: center;
+        width: auto;
+        margin-bottom: 20px;
+    }
+    .vision.aside > p{
+        text-align: justify;
+        width: 90%;
+    }
+}
