@@ -22,7 +22,7 @@ const App = () => {
         <Route path='/bill/About' element={<About />}></Route>
         <Route path='/bill/Contact' element={<Contact />}></Route>
         <Route path='/bill' element= {<Navigate to= '/bill/Home'/>}></Route>
-        <Route path='/*' element={<ErrorPage />}></Route>
+        <Route path='/bill/*' element={<ErrorPage />}></Route>
       </Routes>
       <Footer />
     </div>
