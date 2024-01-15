@@ -10,13 +10,13 @@ const Footer = () => {
                     <h3 className="subtitulos footer">
                         Billalbert Martinez
                     </h3>
-                    <Link to='/Projects'>
+                    <Link to='/bill/Projects'>
                         PROYECTOS
                     </Link>
-                    <Link to="/About">
+                    <Link to="/bill/About">
                         ABOUT
                     </Link>
-                    <Link to="/Contact">
+                    <Link to="/bill/Contact">
                         CONTACTAR
                     </Link>
                 </div>
@@ -33,7 +33,7 @@ const Footer = () => {
             <div className="copiright">
                 <hr/>
                 <p>© Billalbert Martinez - @BillalbertCode </p>
-                <Link to="/About">
+                <Link to="/bill/About">
                     <InfoSvg/>
                 </Link>
             </div>

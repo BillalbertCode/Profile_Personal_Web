@@ -12,24 +12,24 @@ const Nav = () => {
         <>
             <nav id="navcss" className="navbar  navbar-expand-lg sticky-top" >
                 <div className="container-fluid">
-                    <NavLink to='/Home' id="HomeNav"  >
+                    <NavLink to='/bill/Home' id="HomeNav"  >
                         <HouseSvg />
                     </NavLink>
                     <div className="nav justify-content-end" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                            <NavLink to="/Home" id="Inicio" className="nav-link">
+                            <NavLink to="/bill/Home" id="Inicio" className="nav-link">
                                 <p>Inicio</p>
                                 <HouseSvg />
                             </NavLink>
-                            <NavLink to="/Projects" className="nav-link">
+                            <NavLink to="/bill/Projects" className="nav-link">
                                 <p>Proyectos</p>
                                 <ConsoleSvg />
                             </NavLink>
-                            <NavLink to="/About" className="nav-link">
+                            <NavLink to="/bill/About" className="nav-link">
                                 <p>AcercaDe</p>
                                 <InfoSvg />
                             </NavLink>
-                            <NavLink to="/Contact" className="nav-link">
+                            <NavLink to="/bill/Contact" className="nav-link">
                                 <p>Contactar</p>
                                 <TelephoneSvg />
                             </NavLink>

@@ -21,7 +21,7 @@ const SocialNetworks = () => {
                 <a className="item" target="_blank" href="https://github.com/billalbertcode">
                     <GithubSvg/>
                 </a>
-                <Link id="Contacto" className="item contactMe-item " to="/Contact">
+                <Link id="Contacto" className="item contactMe-item " to="/bill/Contact">
                     <CorreoSvg/>
                 </Link>
                 <a className="item contactMe-item " >

@@ -17,11 +17,11 @@ const App = () => {
       <Nav />
       <ScrollToTop/>
       <Routes >
-        <Route path='/Home' element={<Inicio />}></Route>
-        <Route path='/Projects' element={<Projects />}></Route>
-        <Route path='/About' element={<About />}></Route>
-        <Route path='/Contact' element={<Contact />}></Route>
-        <Route path='/bill' element= {<Navigate to= '/Home'/>}></Route>
+        <Route path='/bill/Home' element={<Inicio />}></Route>
+        <Route path='/bill/Projects' element={<Projects />}></Route>
+        <Route path='/bill/About' element={<About />}></Route>
+        <Route path='/bill/Contact' element={<Contact />}></Route>
+        <Route path='/bill' element= {<Navigate to= '/bill/Home'/>}></Route>
         <Route path='/*' element={<ErrorPage />}></Route>
       </Routes>
       <Footer />

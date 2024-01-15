@@ -21,11 +21,11 @@ const Profile = () => {
           </p>
         </article>
         <div className='main-button'>
-          <Link to='/Projects' className='ButtonLink' id="Project">
+          <Link to='/bill/Projects' className='ButtonLink' id="Project">
             <ConsoleSvg />
             Project
           </Link>
-          <Link to='/About' className='ButtonLink' id="About">
+          <Link to='/bill/About' className='ButtonLink' id="About">
             <InfoSvg />
             Info
           </Link>
