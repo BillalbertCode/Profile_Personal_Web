@@ -31,7 +31,7 @@ const Projects = () => {
               </a>
             </div>
             <div className="redes-miniature">
-              <a className="item" href="#">
+              <a className="item" href="https://github.com/BillalbertCode/RandomJs">
                 <GithubSvg />
               </a>
               <a className="item" >
