@@ -81,7 +81,7 @@ const FormContact = () => {
                 </div>
                 <br />
                 <div id="success"></div>
-                <div  className="form-group">
+                <div  className="form-group button-form">
                     <button  className="btn btn-primary btn-xl" type="submit" disable={state.submitting} onClick={handleClick} >
                         Enviar Mensaje
                     </button>

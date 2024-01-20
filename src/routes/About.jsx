@@ -7,8 +7,8 @@ import NodeJsSvg from '../assets/icons/NodeJsSvg'
 import GitSvg from '../assets/icons/GitSvg'
 import ViteSvg from '../assets/icons/ViteSvg'
 import RRDSvg from '../assets/icons/RRDSvg'
-import '../styles/About.css'
 import BootstrapSvg from '../assets/icons/BootstrapSvg';
+import '../styles/About.css'
 const About = () => {
   return (
     <div className="container About">

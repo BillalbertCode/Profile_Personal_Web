@@ -29,5 +29,9 @@ div.light .message-pregunta {
     }
     .contact-section {
        margin-top: 40px;
+       
+    }
+    .contact-section .form-group.button-form {
+        text-align: center;
     }
 }
