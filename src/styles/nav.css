@@ -131,7 +131,7 @@ div.light .navbar .navbar-nav .nav-link.active {
     color: #000;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 540px) {
     #HomeNav {
         display: none;
     }

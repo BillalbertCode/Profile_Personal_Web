@@ -21,7 +21,7 @@ div.light .message-pregunta {
     color: #8f8f8f;
 }
 
-@media screen and (max-width:412px) {
+@media screen and (max-width:540px) {
     .all {
         flex-flow: column nowrap;
         justify-content: center;
@@ -29,7 +29,7 @@ div.light .message-pregunta {
     }
     .contact-section {
        margin-top: 40px;
-       
+       width: 100%;
     }
     .contact-section .form-group.button-form {
         text-align: center;
