@@ -1,32 +1,33 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import { useState } from 'react';
+// import { useState } from 'react';
 const FormContact = () => {
     const [state, handleSubmit] = useForm("xayrnnql");
-    const [alert, setalert] = useState(null);
+   /*  const [alert, setalert] = useState(null); */
+
     if (state.succeeded) {
         return <p>Proceso finalizado</p>;
     }
-    const handleClick = () => {
-        if (state.succeeded) {
-            setalert(
-                <div className="alert alert-success" role="alert">
-                    Mensaje enviado exitosamente! 🥳
-                </div>
-            );
-        } else {
-            setalert(
-                <div className="alert alert-danger" role="alert">
-                    Error al enviar el mensaje 😓 <br />
-                    Contacta por otro de los medios.
-                </div>
-            );
-        }
+    // const handleClick = () => {
+    //     if (state.succeeded) {
+    //         setalert(
+    //             <div className="alert alert-success" role="alert">
+    //                 Mensaje enviado exitosamente! 🥳
+    //             </div>
+    //         );
+    //     } else {
+    //         setalert(
+    //             <div className="alert alert-danger" role="alert">
+    //                 Error al enviar el mensaje 😓 <br />
+    //                 Contacta por otro de los medios.
+    //             </div>
+    //         );
+    //     }
 
-        setTimeout(() => {
-            setalert(null)
-        }, 5000);
-    }
+    //     setTimeout(() => {
+    //         setalert(null)
+    //     }, 5000);
+    // }
 
     return (
         <>
@@ -82,12 +83,12 @@ const FormContact = () => {
                 <br />
                 <div id="success"></div>
                 <div  className="form-group button-form">
-                    <button  className="btn btn-primary btn-xl" type="submit" disable={state.submitting} onClick={handleClick} >
+                    <button  className="btn btn-primary btn-xl" type="submit" disable={state.submitting}/* onClick={handleClick } */ >
                         Enviar Mensaje
                     </button>
                 </div>
             </form>
-                    {alert}
+                   {/*  {alert} */}
         </>
     )
 }
