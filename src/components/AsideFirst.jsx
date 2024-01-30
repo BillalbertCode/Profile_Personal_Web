@@ -1,10 +1,6 @@
-// import { useEffect, useState } from "react";
 import BlockCode from './BlockCode'
 const AsideFirst = () => {
-  // const [initialize, setInitialize] = useState(false);
-  // useEffect(() => {
-  //   setInitialize(true)
-  // }, []);
+
   return (
     <>
       <div className="Resume container">
