@@ -14,7 +14,7 @@ const About = () => {
     <div className="container About">
       <div className="row">
         <IndiceAbout />
-        <div className="col-lg-9">
+        <div className="main-about">
           <h2 id="biografia">Biografía</h2>
           <p>
             Soy un entusiasta del desarrollo con una sólida base técnica en informática y programación. Busco fusionar mi destreza técnica con la creatividad para impulsar el éxito organizacional. Mi experiencia en front-end abarca la codificación, optimización del rendimiento y la garantía de compatibilidad entre navegadores.
@@ -25,8 +25,8 @@ const About = () => {
             Soy un apasionado desarrollador front-end con una firme convicción en la importancia del diseño de experiencias de usuario impactantes. Me he especializado en tecnologías clave como JavaScript, React, y CSS. Constantemente exploro nuevas tendencias y enfoques para crear interfaces visuales atractivas y funcionales.
           </p>
           <p>Utilizo herramientas como Photoshop y Excel para potenciar mi creatividad y habilidades técnicas. Me destaco por entregar proyectos antes de los plazos establecidos, perfeccionando cada detalle.</p>
-          <div className='habilidades'>
-            <div className="fundamentos habilidades-container">
+          <div className='habilidades flex-initial'>
+            <div className="fundamentos habilidades-container ">
               <h3>Fundamentos del Desarrollo Web</h3>
               <div title='Css'>
                 <CssSvg />
@@ -94,7 +94,7 @@ const About = () => {
               </li>
             </ul>
             <br/>
-            <blockquote>Mi enfoque proactivo y habilidades técnicas sólidas aseguraron la entrega exitosa de proyectos mientras mantenía altos estándares de calidad y satisfacción del cliente.</blockquote>
+            <blockquote className='text-comentary'>Mi enfoque proactivo y habilidades técnicas sólidas aseguraron la entrega exitosa de proyectos mientras mantenía altos estándares de calidad y satisfacción del cliente.</blockquote>
             <hr/>
           </div>
           <p></p>

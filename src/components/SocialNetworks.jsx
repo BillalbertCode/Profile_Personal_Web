@@ -7,8 +7,7 @@ import XtwitterSvg from "../assets/icons/XtwitterSvg"
 import { Link } from "react-router-dom"
 const SocialNetworks = () => {
     return (
-        <div className="imagenesNetwork">
-            <div className="socialNetwork">
+            <div className="socialNetwork flex-initial">
                 <a className="item" target="_blank" href="https://www.linkedin.com/in/billalbertcode">
                     <LinkedinSvg/>
                 </a>
@@ -27,7 +26,6 @@ const SocialNetworks = () => {
                 <a className="item contactMe-item " >
                     <EnlaceSvg url="www.bill.caribito.com/bill/" />
                 </a>
-            </div>
         </div>
     )
 }

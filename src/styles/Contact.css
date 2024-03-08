@@ -1,11 +1,9 @@
-.all {
-    display: flex;
-    flex-flow: row nowrap;
+.container-contact {
     margin: 60px 20px;
     width: 90%;
 }
 .informacion{
-    border: #c4c4c4 solid 2px;
+    border: var(--border-borderLight) solid 2px;
     border-radius: 10px;
     padding: 20px;
     max-height: 480px;
@@ -15,17 +13,20 @@
     max-height: 600px;
     max-width: 1400px;
 }
-
+.containerForm2 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
 div.dark .message-pregunta {
-    color: #c4c4c4;
+    color: var(--text-LighterText-Dark);
 }
 
 div.light .message-pregunta {
-    color: #8f8f8f;
+    color: var(--text-LighterText-Light);
 }
 
-@media screen and (max-width:540px) {
-    .all {
+@media (max-width:540px) {
+    .container-contact {
         flex-flow: column nowrap;
         justify-content: center;
         width: 90%;
@@ -36,5 +37,8 @@ div.light .message-pregunta {
     }
     .contact-section .form-group.button-form {
         text-align: center;
+    }
+    .containerForm2{
+        width: 100%;
     }
 }

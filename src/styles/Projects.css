@@ -2,14 +2,16 @@
 .container.aside-project {
     max-width: none;
 }
-.carousel-item.active .d-block.w-100{
+
+.carousel-item.active .d-block.w-100 {
     opacity: 40%;
 }
- 
-.carousel-caption.d-none.d-md-block{
-    font-family: "Montserrat";
+
+.carousel-caption.d-none.d-md-block {
+    font-family: var(--textType1);
 }
-.carousel{
+
+.carousel {
     display: flex;
     align-items: center;
     width: 70vw;
@@ -17,30 +19,34 @@
     max-width: 716px;
     max-height: 450px;
     border-radius: 15px;
-    background: #000215;
+    background: var(--background-Container-Dark);
 }
+/* effect in loading carrousel */
 div.light .carousel a{
-    color: #ffffff;
+    color:#fff;
 }
 .container.aside-project {
     padding-bottom: 30px;
 }
+
 div.dark .container.aside-project {
-    background: #000215;
-}
-div.light .container.aside-project {
-    background: #ffffff;
+    background: var(--background-Container-Dark);
 }
 
+div.light .container.aside-project {
+    background: var(--background-Container-Light);
+}
 
 .projects-categorise div h5 {
-    font-family: "Montserrat";
+    font-family: var(--textType1);
     font-weight: 100;
 }
+
 .projects-miniature {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap:wrap;
 }
+
 .projects-miniature .miniature {
     display: grid;
     grid-template-columns: auto, auto, auto;
@@ -64,14 +70,14 @@ div.light .container.aside-project {
 .skills-miniature .bi {
     width: 30px;
     height: auto;
-}
+} 
 
 .image-miniature {
     position: relative;
-    font-family: "Exo 2", "Open Sans";
+    font-family: var(--textType2);
     width: 14em;
     height: 9em;
-    border: #cfcfcf solid 2px;
+    border: var(--border-borderLight) solid 2px;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -84,12 +90,15 @@ div.light .container.aside-project {
     opacity: 0;
     transition: opacity 0.3s ease-in-out, background 0.6s ease, bottom 0.3s ease-in-out;
 }
-div.dark .overlay{
+
+div.dark .overlay {
     background: rgba(0, 0, 0, 0.61);
 }
-div.light .overlay{
+
+div.light .overlay {
     background: rgba(141, 141, 141, 0.61);
 }
+
 .image-miniature:hover .overlay {
     opacity: 1;
     bottom: 0%;
@@ -98,21 +107,15 @@ div.light .overlay{
 div.dark .overlay:hover {
     background: rgba(49, 67, 231, 0.603);
 }
+
 div.light .overlay:hover {
     background: rgba(49, 164, 231, 0.603);
 }
 
 
-@media screen and (max-width:412px) {
+@media (max-width:540px) {
     .image-miniature .overlay {
         opacity: 1;
         bottom: 0%;
-    }
-    .carousel{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90vw ;
-        height: 40vh;
     }
 }

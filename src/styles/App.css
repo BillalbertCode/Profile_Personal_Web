@@ -1,27 +1,106 @@
+:root {
+    /* Format of text --Type-info(coment or name)-Mode */
+
+    /* Componets Usage */
+    --background-Web-Light: #f5f5dc;
+    --background-Web-Dark: black;
+    --text-Web-Dark: #fff;
+    --text-Web-Light: #000;
+
+    --background-SmallContainer-Light: beige;
+    --background-SmallContainer-Dark: #fff;
+    --text-SmallContainer-Dark: black;
+
+    --text-FooterSubtitles-Dark: #ffb800;
+    --text-FooterSubtitles-Light: #dd9000;
+
+    --background-Navbar-Dark: #101222;
+    --background-Navbar-Light: #ececcf;
+    --color-NavbarLinkActive: #3d53f5;
+    --color-NavbarLinkDesactive-Dark: #17258b;
+    --color-NavbarLinkDesactive-Light: #707058;
+
+    --button-Project-Dark: #202232;
+    --button-About-Dark: #424242;
+    --button-CV-Dark: #2c61c4;
+    --button-CV-Light: #f1e387;
+
+    --background-ContainerSkill-Dark: linear-gradient(180deg, rgba(10, 1, 56, 1) 0%, rgba(32, 6, 68, 1) 35%);
+
+    --background-ContainerVision-Dark: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 14, 45, 1) 100%);
+    --background-ContainerVision-Light: linear-gradient(180deg, rgba(245, 245, 220, 1) 53%, rgba(241, 214, 182, 1) 100%);
+    /* Usefull */
+    --background-Container-Light: #fff;
+    --background-Container-Dark: #000215;
+
+    --color-BorderImage-Dark: linear-gradient(270deg, #000000 0%, #c89116 100%);
+    --color-BorderImage-Light: linear-gradient(270deg, #ffffff 0%, #ffc400 100%);
+    --color-BoderImageRadial-Dark: radial-gradient(circle, rgba(255, 184, 0, 1) 0%, rgba(82, 66, 30, 0) 100%);
+    --color-BorderImageRadial-Light: radial-gradient(circle, rgb(255, 187, 0) 0%, rgba(255, 255, 255, 0.541) 100%);
+    --border-borderLight: #8d8d8d;
+
+    --text-link: #546dfd;
+    --text-LighterText-Dark: #cfcfcf;
+    --text-LighterText-Light: #3b3b3b;
+    --textType1: "Montserrat", sans-serif;
+    --textType2: "Exo 2", 'Open sans';
+    --SizeText1: 2.5em;
+    --SizeText2: 1.4em;
+    --SizeText3: 1.2em;
+    --SizeText4: 1.08em;
+    --SizeText5: 1em;
+    --SizeText6: 0.9em;
+
+}
+
+/* Usefull class */
+.flex-initial {
+    display: flex;
+    padding: 4px;
+    box-sizing: content-box;
+
+}
+.column-nowrap-center{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+}
+.text-comentary {
+    text-align: center;
+    font-style: italic;
+    font-family: var(--textType1);
+    font-size: var(--textSize4);
+}
+
 * {
     transition: background-color 0.5s ease;
 }
-div.dark,div.light{
+
+div.dark,
+div.light {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
 div.dark {
-    background-color: black;
-    color: #fff;
+    background-color: var(--background-Web-Dark);
+    color: var(--text-Web-Dark);
 }
+
 div.dark a {
-    color: #fff;
+    color: var(--text-Web-Dark);
 }
 
 div.light {
-    background-color: #f5f5dc;
-    color: #000;
+    background-color: var(--background-Web-Light);
+    color: var(--text-Web-Light);
 }
 
 div.light a {
-    color: #000;
+    color: var(--text-Web-Light);
 }
-.alert{
+
+.alert {
     position: absolute;
 }

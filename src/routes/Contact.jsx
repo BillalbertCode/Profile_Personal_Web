@@ -4,7 +4,7 @@ import '../styles/Contact.css'
 export const Contact = () => {
   return (
     <>
-      <div className="all">
+      <div className="container-contact flex-initial">
         <div className="informacion">
           <h2>Información de contacto</h2><hr />
           <div>

@@ -10,7 +10,7 @@ import ImageLoader from "../components/ImageLoader"
 const Projects = () => {
   return (
     <div className='Project'>
-      <main className="container main-project">
+      <main className="container main-project flex-initial">
         <Carrusel />
       </main>
       <aside className="container aside-project">
@@ -20,7 +20,7 @@ const Projects = () => {
           </div>
           <hr />
         </div>
-        <div className="projects-miniature">
+        <div className="projects-miniature ">
           <div id="Ruleta" className="miniature">
             <div className="image-miniature">
               <ImageLoader src="http://bill.caribito.com/bill/src/Ruletacapture.png" className="d-block w-100" alt="Ruleta" />

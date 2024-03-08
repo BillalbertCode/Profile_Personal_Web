@@ -10,7 +10,7 @@ const VisionSecction = () => {
         <div className="principal vision">
             <h2>Vision</h2>
             <div className="VisionContent">
-                <div className="visionFirst">
+                <div className="visionFirst flex-initial">
                     <p>Mi visión hacia el futuro es convertirme en un programador full-stack de gran alcance y versatilidad. Estoy comprometido a expandir mis conocimientos en bases de datos, perfeccionando mi dominio de SQL y Python para manejar datos de manera eficiente y efectiva.</p>
                     <div className="vision main">
                         <div className="vision item">
@@ -29,7 +29,7 @@ const VisionSecction = () => {
                     </div>
                 </div>
             </div>
-            <div className="vision aside">
+            <div className="vision aside column-nowrap-center">
                 <p>Además, aspiro a explorar a fondo el lenguaje C++, aprovechándolo para la creación de aplicaciones de escritorio y desarrollar mis habilidades como programador desktop. Este viaje requiere dedicación y esfuerzo, pero estoy completamente comprometido con mi desarrollo profesional.</p>
                 <div className="vision item aside-items">
                         <PhytonSvg />

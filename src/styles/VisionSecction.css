@@ -4,35 +4,33 @@
     padding-bottom: 30px;
 }
 div.dark .principal.vision{
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,14,45,1) 100%);
+    background: var(--background-ContainerVision-Dark);
 }
 div.light .principal.vision{
-    background: linear-gradient(180deg, rgba(245,245,220,1) 53%, rgba(241,214,182,1) 100%);
+    background: var(--background-ContainerVision-Light);
 }
 .principal.vision h2{
-    font-family: "Montserrat", "Open Sans";
-    font-size: 36px;
+    font-family: var(--textType1);
+    font-size: var(--SizeText1);
     margin-bottom:50px ;
 
 }
 .visionFirst{
-    display: flex;
-    flex-flow: row nowrap;
     justify-content: space-around;
     border-bottom: solid  3px;
     margin:30px 15px;
+    border-image-slice:1 !important;
 }
 div.dark .visionFirst{
-    border-image: radial-gradient(circle, rgba(255,184,0,1) 0%, rgba(82, 66, 30, 0) 100%); 
-    border-image-slice: 1;
+    border-image: var(--color-BoderImageRadial-Dark); 
 }
 div.light .visionFirst{
-    border-image: radial-gradient(circle, rgb(255, 187, 0) 0%, rgba(255, 255, 255, 0.541) 100%); 
-    border-image-slice: 1;
+    border-image: var(--color-BorderImageRadial-Light); 
 }
 .visionFirst > p {
     width: 35%;
-    font-size: 1.05em;
+    font-size: var(--SizeText4);
+    font-weight: 100;
     text-align:justify;
 }
 .vision.main{
@@ -47,8 +45,8 @@ div.light .visionFirst{
 
 .vision.item {
     width: auto;
-    font-size: 20px;
-    font-family: "Montserrat","Open Sans";
+    font-size: var(--SizeText4);
+    font-family: var(--textType1);
 }
 .vision.item .bi {
     width: 75px;
@@ -57,14 +55,9 @@ div.light .visionFirst{
 .vision.item > .bi-pc-display{
     color: #004aad;
 }
-.vision.aside{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    text-align: center;
-}
+
 .vision.aside > p {
-    font-size: large;
+    font-size: var(--SizeText4);
     width: 70%;
 }
 .vision.item.aside-items{
@@ -73,7 +66,7 @@ div.light .visionFirst{
 .vision.item.aside-items .bi{
     margin: 10px 20px;
 }
-@media screen and (max-width:412px) {
+@media (max-width:540px) {
     .visionFirst{
         flex-flow: column nowrap ;
     }

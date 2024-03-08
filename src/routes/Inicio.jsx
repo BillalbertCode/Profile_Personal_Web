@@ -7,11 +7,11 @@ import VisionSecction from '../components/VisionSecction'
 export const Inicio = () => {
   return (
     <>
-      <main>
+      <main className='flex-initial'>
         <Profile />
       </main>
       <aside >
-        <div className='container asidefirst'>
+        <div className='container asidefirst flex-initial'>
           <AsideFirst />
         </div>
         <div className='container skill'>

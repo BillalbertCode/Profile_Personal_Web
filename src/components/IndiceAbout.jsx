@@ -1,6 +1,6 @@
 const IndiceAbout = () => {
     return (
-        <div className="col-lg-3">
+        <div className="index-about">
             <h5>Contenidos</h5>
             <ul className="list-group">
                 <li className="list-group-item">

@@ -1,5 +1,4 @@
 .container.asidefirst {
-    display: flex;
     justify-content: space-between;
     width: 100%;
     margin-top: 7em;
@@ -9,28 +8,27 @@
 .Resume {
     width: 40%;
 }
-
 .Resume>h2 {
-    font-weight: 100;
-    font-size: 2.5em;
+    font-size: var(--SizeText1);
     margin-bottom: 30px;
 }
 
 .Resume>h4 {
-    font-size: 1.2em;
+    font-size: var(--SizeText3);
+}
+.Resume>h2, .Resume>h4{
     font-weight: 100;
 }
-
 .Resume>p {
-    font-size: 1em;
+    font-size: var(--textSize2);
 }
 
 div.dark .Resume>p {
-    color: #cfcfcf;
+    color: var(--text-LighterText-Dark);
 }
 
 div.light .Resume>p {
-    color: #2b2b2b;
+    color: var(--text-LighterText-Light);
 }
 
 .BlockCode {
@@ -38,16 +36,21 @@ div.light .Resume>p {
     height: 500px;
     background-color: #000;
     border-radius: 6px;
-    overflow-y: scroll;
+    overflow: auto;
     position: relative;
+
 }
 
-@media screen and (max-width: 412px) {
+.BlockCode pre{
+    height: 96%;
+}
+@media (max-width: 540px) {
     .container.asidefirst {
         flex-flow: column nowrap;
         justify-content: center;
     }
     .Resume.container{
+        text-align: center;
         margin-bottom: 15px;
     }
     .Resume {

@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer>
             <div className='container info'>
-                <div className='footer links'>
+                <div className='footer links column-nowrap-center'>
                     <h3 className="subtitulos footer">
                         Billalbert Martinez
                     </h3>
@@ -20,13 +20,13 @@ const Footer = () => {
                         CONTACTAR
                     </Link>
                 </div>
-                <div className='footer reds'>
+                <div className='footer reds column-nowrap-center'>
                     <h3 className="footer subtitulos">
                         Redes
                     </h3>
                     <SocialNetworks />
                 </div>
-                <div className="mencions">
+                <div className="mencions text-comentary">
                     <p>"Este sitio web utiliza <a href="https://getbootstrap.com/">Boostrap</a> para el diseño y <a href="https://es.react.dev/">React </a>para la construccion de interfaces interactivas."</p>
                 </div>
             </div>

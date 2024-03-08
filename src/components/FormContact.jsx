@@ -55,7 +55,7 @@ const FormContact = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-8 mx-auto">
+                    <div className="containerForm2 mx-auto">
                         <form className="needs-validation" onSubmit={handleSubmit} noValidate>
                             <div className="control-group " >
                                 <div className="form-group floating-label-form-group controls mb-0 pb-2">

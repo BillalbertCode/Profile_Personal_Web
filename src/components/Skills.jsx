@@ -94,7 +94,7 @@ const Skills = () => {
     }, []);
 
     return (
-        <div className="container skill-container">
+        <div className="container skill-container column-nowrap-center">
             <h2 >Habilidades y Herramientas</h2>
             <div className="icon-container grid-container">
                 {rotateIcons()}

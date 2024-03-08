@@ -1,155 +1,178 @@
-main{
-    display: flex;
+main {
     justify-content: center;
     align-items: center;
     padding: 30px;
 }
+
 div.dark main {
-    background-color: #000215;
+    background-color: var(--background-Container-Dark);
 }
-div.light main{
-    background-color:#fff;
+
+div.light main {
+    background-color: var(--background-Container-Light);
 }
-section{
+
+section {
     margin-left: 7em;
     width: 20em;
 }
+
 .div-img {
     border: 4px solid currentColor;
     overflow: hidden;
     width: 18em;
     height: 23em;
 }
-.img-fluid{
+
+.img-fluid {
     width: 100%;
     height: 100%;
 }
 
-h1{
-    font-size: 2.5em;
-    font-family: 'Exo 2', 'Open sans';
+h1 {
+    font-size: var(--SizeText1);
+    font-family: var(--textType2);
 }
-h2{
-    font-family: 'Montserrat', 'Open sans';
-    font-size: 1.5em;
+
+h2 {
+    font-family: var(--textType1);
+    font-size: var(--SizeText2);
 }
-article{
+
+article {
     width: 80%;
 }
+
 article p {
-    font-size: 0.85em;
+    font-size: var(--SizeText6);
 }
+
 div.dark main article p {
-    color:#cfcfcf;
+    color: var(--text-LighterText-Dark);
 }
-section .imagenesNetwork{
-    display: flex;
-    flex-flow: row wrap;
+
+div.light main article p {
+    color: var(--text-LighterText-Light);
+}
+
+main section .socialNetwork {
     padding: 4px;
     border-bottom: 2px solid;
-    margin-right: 3em ;
+    margin-right: 3em;
     box-sizing: content-box;
+    border-image-slice: 1 !important;
 }
-section .imagenesNetwork #Contacto  {
-    margin-left:50px ;
+
+div.light main section .socialNetwork {
+    border-image: var(--color-BorderImage-Light);
 }
-div.light main section .imagenesNetwork{
-    border-image:  linear-gradient(270deg, #ffffff 0%, #ffc400 100%);
-    border-image-slice: 1;
+
+div.dark main section .socialNetwork {
+    border-image: var(--color-BorderImage-Dark);
 }
-div.dark main section .imagenesNetwork{
-    border-image:  linear-gradient(270deg, #000000 0%, #c89116 100%);
-    border-image-slice: 1;
+
+section .socialNetwork #Contacto {
+    margin-left: 50px;
 }
-.item{
-    margin:2px;
+
+.item {
+    margin: 2px;
 }
-a.item svg.bi:hover{
+
+a.item svg.bi:hover {
     transform: scale(1.2);
 }
-.main-button{
+
+.main-button {
     justify-content: start;
 }
 
-.ButtonLink{
+.ButtonLink {
     margin: 4px;
     padding: 6px;
-    border-radius: 10px 10px 10px 10px ;
+    border-radius: 10px;
     text-decoration: none;
+    font-size: var(--SizeText6);
+    font-weight: 100;
     box-sizing: border-box;
-    font-size: 0.9em;
-    font-weight:lighter;
 }
-.ButtonLink .bi{
-    margin:0px 4px  ;
+
+.ButtonLink .bi {
+    margin: 0px 4px;
 }
-div.dark main #Project{
-    background-color: #202232;
+
+div.dark main #Project {
+    background-color: var(--button-Project-Dark);
 }
-div.dark main #Project:hover{
-    background-color: #353b63;
+
+div.dark main #About {
+    background-color: var(--button-About-Dark);
 }
-div.dark main #About{
-    background-color: #424242;
+
+div.dark main #CV {
+    background-color: var(--button-CV-Dark);
 }
-div.dark main #About:hover{
-    background-color: #8f8668;
+
+div.dark main #Project:hover,
+div.dark main #About:hover,
+div.dark main #CV:hover {
+    filter: brightness(150%);
 }
-div.dark main #CV{
-    background-color: #5b87d8;
+
+div.light main #CV {
+    background-color: var(--button-CV-Light);
+}
+
+div.light main #Project,
+div.light main #About,
+div.light main #CV {
+    border: solid var(--border-borderLight) 1px;
+}
+
+div.light main #Project:hover,
+div.light main #About:hover,
+div.light main #CV:hover {
+    border: solid #000000 1px;
+}
+
+#CV {
     cursor: pointer;
 }
-div.dark main #CV:hover{
-    background-color: #2c61c4;
-}
-div.light main #Project{
-    border:solid #8d8d8d 1px;
-}
-div.light main #Project:hover{
-    border:solid #000000 1px;
-}
-div.light main #About{
-    border:solid #8d8d8d 1px;
-}
-div.light main #About:hover{
-    border:solid #000000 1px;
-}
-div.light main #CV{
-    border:solid #8d8d8d 1px;
-    background-color: #f1e387;
-    cursor: pointer;
-}
-div.light main #CV:hover{
-    background-color: #fff185;
-}
-@media screen and (max-width: 412px) {
-    .div-img{
+
+@media (max-width: 540px) {
+    .div-img {
         display: none;
     }
-    section{
+
+    section {
         margin-left: 0px;
-        display: flex ;
+        display: flex;
         flex-flow: column wrap;
         align-items: center;
-        text-align: center; 
+        text-align: center;
     }
-    main section .imagenesNetwork,div.light main section .imagenesNetwork, div.dark main section .imagenesNetwork{
+
+    main section .socialNetwork,
+    div.light main section .socialNetwork,
+    div.dark main section .socialNetwork {
         margin-right: 0px;
-        padding-bottom: 8px;
         margin-bottom: 10px;
-        border-image:none ;
+        padding-bottom: 8px;
+        border-image: none;
         border-image-slice: none;
     }
-    section .imagenesNetwork #Contacto  {
-        margin-left:2px ;
+
+    section .socialNetwork #Contacto {
+        margin-left: 2px;
     }
-    
-    .main-button{
+
+    .main-button {
         display: grid;
-        grid-template-columns: auto,auto,auto;
+        grid-template-columns: auto, auto, auto;
     }
-    .main-button #CV{
-        margin:0px auto ;
+
+    .main-button #CV {
+        margin: 0px auto;
         width: 90px;
         grid-row: 2 / 2;
         grid-column: 1 / 3;

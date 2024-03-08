@@ -4,23 +4,30 @@
 }
 
 div.light .container.About {
-    background-color: #fff;
+    background-color: var(--background-Container-Light);
 }
 
 div.dark .container.About {
-    background: #000215;
+    background: var(--background-Container-Dark);
 }
 
 .container.About h2 {
     scroll-margin-top: 100px;
 }
 
+.index-about {
+    flex: 0 0 auto;
+    width: 30%;
+}
+
+.main-about {
+    flex: 0 0 auto;
+    width: 70%;
+}
+
 .container.About .habilidades {
-    display: flex;
-    flex-flow: row nowrap;
     margin-left: -20px;
     box-sizing: border-box;
-
 }
 
 .container.About .habilidades svg {
@@ -29,13 +36,13 @@ div.dark .container.About {
 }
 
 .container.About .habilidades h3 {
-    font-size: 1em;
-    font-family: "Exo 2";
+    font-size: var(--SizeText5);
+    font-family: var(--textType2);
 }
 
 .container.About .habilidades .habilidades-container {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     padding: 4px;
@@ -45,18 +52,11 @@ div.dark .container.About {
 }
 
 .container.About .experiencia h3 {
-    font-size: 1.1em;
+    font-size: 1.var(--SizeText5);
 }
 
 .container.About .experiencia h4 {
-    font-size: 0.9em;
-}
-
-.container.About blockquote {
-    text-align: center;
-    font-style: italic;
-    font-family: "Montserrat";
-    font-size: small;
+    font-size: var(--SizeText6);
 }
 
 .container.About span {
@@ -64,25 +64,27 @@ div.dark .container.About {
 }
 
 div.dark .container.About li a {
-    color: black;
+    color: var(--text-SmallContainer-Dark);
 }
 
 div.light .list-group-item {
-    background-color: beige;
+    background-color: var(--background-SmallContainer-Light);
 }
 
 div.dark .list-group-item {
-    background-color: #fff;
+    background-color: var(--background-SmallContainer-Dark);
 }
 
-@media screen and (max-width: 350px) {
+@media (max-width: 350px) {
     .container.About .habilidades {
         flex-flow: row wrap;
     }
-    
+
 }
-@media screen and (max-width:540px){
-    .container.About .col-lg-3{
+
+@media (max-width:540px) {
+    .container.About .index-about {
         margin-bottom: 10px;
+        width: 100%;
     }
 }
