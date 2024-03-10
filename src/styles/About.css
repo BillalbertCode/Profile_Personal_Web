@@ -83,8 +83,8 @@ div.dark .list-group-item {
 }
 
 @media (max-width:540px) {
-    .container.About .index-about {
-        margin-bottom: 10px;
+    .container.About .index-about,.container.About .main-about {
+        margin-bottom: 20px;
         width: 100%;
     }
 }
