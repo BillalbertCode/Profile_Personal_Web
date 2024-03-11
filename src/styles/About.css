@@ -15,6 +15,9 @@ div.dark .container.About {
     scroll-margin-top: 100px;
 }
 
+.container.About span {
+    font-weight: bold;
+}
 .index-about {
     flex: 0 0 auto;
     width: 30%;
@@ -50,18 +53,44 @@ div.dark .container.About {
     border: 2px solid currentColor;
     box-sizing: border-box;
 }
+.container.About .certifications{
+    margin-top: 40px;
+    margin-left:0;
+    text-align: start;
+    width: 100%;
+}
+.container.About .container-certification{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 900px;
+    gap:30px;
+}
+
+.container-certification .text-certification{
+    display: flex;
+    flex-flow: column wrap;
+}
+.container-certification .img-certification-link{
+    width: 35%;
+    max-width:300px ;
+    min-width: 100px;
+    border: 3px solid currentColor;
+}
+.container-certification .img-certification{
+    width:100%;
+}
 
 .container.About .experiencia h3 {
-    font-size: 1.var(--SizeText5);
+    font-size: var(--SizeText5);
 }
 
 .container.About .experiencia h4 {
     font-size: var(--SizeText6);
 }
 
-.container.About span {
-    font-weight: bold;
-}
 
 div.dark .container.About li a {
     color: var(--text-SmallContainer-Dark);
@@ -86,5 +115,13 @@ div.dark .list-group-item {
     .container.About .index-about,.container.About .main-about {
         margin-bottom: 20px;
         width: 100%;
+    }
+    .container.About .container-certification{
+        flex-flow: column nowrap;
+        text-align: center;
+        gap:0px;
+    }
+    .container-certification .img-certification-link{
+        width: 90%;
     }
 }

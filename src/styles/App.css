@@ -50,7 +50,7 @@
     --SizeText4: 1.08em;
     --SizeText5: 1em;
     --SizeText6: 0.9em;
-
+    --SizeText7: 0.6em;
 }
 
 /* Usefull class */
@@ -69,9 +69,14 @@
     text-align: center;
     font-style: italic;
     font-family: var(--textType1);
-    font-size: var(--textSize4);
+    font-size: var(--SizeText5);
 }
-
+.small-description{
+    font: var(--textType1);
+    font-size: var(--SizeText6);
+    font-style: italic;
+    font-weight: 100 !important;
+}
 * {
     transition: background-color 0.5s ease;
 }

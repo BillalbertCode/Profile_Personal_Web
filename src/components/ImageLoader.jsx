@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-const ImageLoader = ({ src, className }) => {
+const ImageLoader = ({ title, src, className }) => {
     const [loading, setLoading] = useState(true);
     const [image, setImage] = useState(null);
 
@@ -28,7 +28,7 @@ const ImageLoader = ({ src, className }) => {
                     </div>
                 </div>
             ) : (
-                <img src={image} alt="loading" className={className} /> 
+                <img title={title} src={image} alt="loading" className={className} /> 
             )}
         </>
     );

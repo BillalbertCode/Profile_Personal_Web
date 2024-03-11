@@ -9,6 +9,7 @@ import ViteSvg from '../assets/icons/ViteSvg'
 import RRDSvg from '../assets/icons/RRDSvg'
 import BootstrapSvg from '../assets/icons/BootstrapSvg';
 import '../styles/About.css'
+import ImageLoader from '../components/ImageLoader';
 const About = () => {
   return (
     <div className="container About">
@@ -64,11 +65,19 @@ const About = () => {
             </div>
           </div>
           <hr />
-          <h2 id="educacion">Educación y Certificaciones</h2>
+          <h2 id="educacion">Educación </h2>
           <ul>
             <li>Bachiller, U.E.N Alonso Andrea de Ledesma, Julio 2020</li>
             <li>Colegio Universitario de Caracas: 2do Semestre en Informática. (Estudios Vigentes)</li>
           </ul>
+          <section className='certifications'>
+            <h2 id="certificaciones">Certificaciones</h2>
+            <div className="container-certification">
+               <p className="text-certification"><span>FreeCodeCamp </span>
+               <a title="Ver Certificado" target='_Blank' href='https://www.freecodecamp.org/certification/fcc1a56704f-3616-4004-8d9a-3d0a5cf852e3/responsive-web-design'>Responsive Web Design</a> <span class="small-description">(Html, Css and Querys)</span> </p>
+               <a target='_Blank' className="img-certification-link" href='https://www.freecodecamp.org/certification/fcc1a56704f-3616-4004-8d9a-3d0a5cf852e3/responsive-web-design'><ImageLoader title="Responsive Web Design, Certificado" src="https://bill.caribito.com/bill/src/Certificate_Responsive-Web-Design_Mini.png" className="img-certification" /></a>
+            </div>
+          </section>
           <hr />
           <h2 id="experiencia">Experiencia Laboral</h2>
           <div className="experiencia">
