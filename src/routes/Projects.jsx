@@ -44,12 +44,31 @@ const Projects = () => {
               <CssSvg />
             </div>
           </div>
+          <div id="WAPL" className="miniature">
+            <div className="image-miniature">
+              <ImageLoader src="https://bill.caribito.com/bill/WAPL/src/Logo/LogoWAPL2White.jpeg" className="d-block w-100" alt="WAPL" />
+              <a href="https://bill.caribito.com/bill/WAPL/">
+                <div className="overlay">
+                  <h4>WAPL Site</h4>
+                </div>
+              </a>
+            </div>
+            <div className="redes-miniature">
+              <a className="item" target="_blank" href="https://github.com/BillalbertCode/WAPL-Web">
+                <GithubSvg />
+              </a>
+              <a className="item" >
+                <EnlaceSvg url="https://bill.caribito.com/bill/WAPL/" />
+              </a>
+            </div> 
+            <div className="skills-miniature">
+              <Html5Svg />
+              <CssSvg />
+            </div>
+          </div>
         </div>
       </aside>
     </div>
   )
-
 }
-
-
 export default Projects

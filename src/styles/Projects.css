@@ -1,5 +1,6 @@
 .container.main-project,
 .container.aside-project {
+    box-sizing: border-box;
     max-width: none;
 }
 
@@ -45,6 +46,7 @@ div.light .container.aside-project {
 .projects-miniature {
     display: flex;
     flex-wrap:wrap;
+    gap:35px;
 }
 
 .projects-miniature .miniature {
@@ -74,29 +76,42 @@ div.light .container.aside-project {
 
 .image-miniature {
     position: relative;
-    font-family: var(--textType2);
+    font-family: var(--textType1);
+    font-weight: bold;
     width: 14em;
     height: 9em;
     border: var(--border-borderLight) solid 2px;
     border-radius: 8px;
     overflow: hidden;
 }
-
+.image-miniature h4{
+    font-size: var(--SizeText3);
+    font-weight: bold ;
+}
 .overlay {
     position: absolute;
     text-align: center;
     width: 100%;
     bottom: -14%;
     opacity: 0;
+    
     transition: opacity 0.3s ease-in-out, background 0.6s ease, bottom 0.3s ease-in-out;
 }
-
+div.light #WAPL .image-miniature{
+    border: #25ac78 solid 2px;
+}
+div.dark #WAPL .image-miniature{
+    border: #ffc400 solid 2px;
+}
+div.dark #WAPL .image-miniature > img{
+    filter: invert(100%);
+}
 div.dark .overlay {
     background: rgba(0, 0, 0, 0.61);
 }
 
 div.light .overlay {
-    background: rgba(141, 141, 141, 0.61);
+    background: rgba(207, 199, 126, 0.849);
 }
 
 .image-miniature:hover .overlay {
@@ -109,7 +124,7 @@ div.dark .overlay:hover {
 }
 
 div.light .overlay:hover {
-    background: rgba(49, 164, 231, 0.603);
+    background: rgb(207, 199, 126);
 }
 
 
@@ -117,5 +132,17 @@ div.light .overlay:hover {
     .image-miniature .overlay {
         opacity: 1;
         bottom: 0%;
+    }
+}
+@media (max-width:596px){
+    .projects-miniature .miniature {
+        transform: scale(1.2);
+        margin:50px auto auto auto;
+        gap:20px;
+    }
+}
+@media (max-width:895px){
+    .projects-miniature {
+        justify-content: center;
     }
 }
