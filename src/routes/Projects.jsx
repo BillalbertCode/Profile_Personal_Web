@@ -31,17 +31,17 @@ const Projects = () => {
               </a>
             </div>
             <div className="redes-miniature">
-              <a className="item" target="_blank" href="https://github.com/BillalbertCode/RandomJs">
+              <a title="GitHub" className="item" target="_blank" href="https://github.com/BillalbertCode/RandomJs">
                 <GithubSvg />
               </a>
-              <a className="item" >
+              <a title="Copy Link" className="item" >
                 <EnlaceSvg url="https://bill.caribito.com/bill/Ruleta/" />
               </a>
             </div> 
             <div className="skills-miniature">
-              <Html5Svg />
-              <JsSvg />
-              <CssSvg />
+              <a title="Html5"><Html5Svg /></a>
+              <a title="JavaScript"><JsSvg /></a>
+              <a title="Css"><CssSvg /></a>
             </div>
           </div>
           <div id="WAPL" className="miniature">
@@ -54,16 +54,16 @@ const Projects = () => {
               </a>
             </div>
             <div className="redes-miniature">
-              <a className="item" target="_blank" href="https://github.com/BillalbertCode/WAPL-Web">
+              <a title="GitHub" className="item" target="_blank" href="https://github.com/BillalbertCode/WAPL-Web">
                 <GithubSvg />
               </a>
-              <a className="item" >
+              <a title="Copy Link" className="item" >
                 <EnlaceSvg url="https://bill.caribito.com/bill/WAPL/" />
               </a>
             </div> 
             <div className="skills-miniature">
-              <Html5Svg />
-              <CssSvg />
+              <a title="HTML5"><Html5Svg /></a>
+              <a title="Css"><CssSvg /></a>
             </div>
           </div>
         </div>

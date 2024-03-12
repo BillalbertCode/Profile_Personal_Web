@@ -19,8 +19,8 @@
   <meta name="keywords"
     content="@BillalbertCode, Billalbert Martinez, Front-End Developer, Portafolio, Portafolio Personal">
   <meta name="robots" content="content=index , follow">
-  
-    <!-- Redes -->
+
+  <!-- Redes -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@BillalbertCode">
   <meta name="twitter:title" content="BillalbertCode">
@@ -44,6 +44,22 @@
 
   <title>BillalbertCode || Project Hub </title>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("a").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+</script>
 
 <body>
   <div id="root"></div>

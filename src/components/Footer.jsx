@@ -33,7 +33,7 @@ const Footer = () => {
             <div className="copiright">
                 <hr/>
                 <p>© Billalbert Martinez - @BillalbertCode </p>
-                <Link to="/bill/About">
+                <Link title="Mas Informacion" to="/bill/About">
                     <InfoSvg/>
                 </Link>
             </div>

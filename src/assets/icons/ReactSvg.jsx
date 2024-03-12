@@ -1,7 +1,7 @@
 const ReactSvg = () => {
     return (
         <>
-            <svg width="100px" height="100px" viewBox="0 0 3618.6 3618.6" id="Layer_2" xmlns="http://www.w3.org/2000/svg">
+            <svg title="React" width="100px" height="100px" viewBox="0 0 3618.6 3618.6" id="Layer_2" xmlns="http://www.w3.org/2000/svg">
                 <style>
                     {`.st0{fill:#;opacity:0%;}.st1{fill:#00d8ff}.st2{fill:none;stroke:#00d8ff;stroke-width:144.7456;stroke-miterlimit:10}`}
                 </style>

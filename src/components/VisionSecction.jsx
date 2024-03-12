@@ -32,7 +32,7 @@ const VisionSecction = () => {
             <div className="vision aside column-nowrap-center">
                 <p>Además, aspiro a explorar a fondo el lenguaje C++, aprovechándolo para la creación de aplicaciones de escritorio y desarrollar mis habilidades como programador desktop. Este viaje requiere dedicación y esfuerzo, pero estoy completamente comprometido con mi desarrollo profesional.</p>
                 <div className="vision item aside-items">
-                        <PhytonSvg />
+                        <PhytonSvg/>
                         <CppSVg />
                         <MySqlSvg />
                 </div>
