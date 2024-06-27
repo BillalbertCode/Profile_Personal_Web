@@ -4,7 +4,7 @@ const EnlaceSvg = ({ url }) => {
     function copyLink() {
         navigator.clipboard.writeText(url);
         setAlert(
-            <div class="alert alert-success" role="alert">
+            <div className="alert alert-success" role="alert">
                 Enlace copiado!
             </div>
         );

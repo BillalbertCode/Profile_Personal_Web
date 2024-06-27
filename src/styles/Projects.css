@@ -4,17 +4,28 @@
     max-width: none;
 }
 
-.carousel-item.active .d-block.w-100 {
-    opacity: 40%;
+.carousel-item img {
+    opacity: 60%;
+    height: 70vh;
+    width: 100%;
 }
 
 .carousel-caption.d-none.d-md-block {
     font-family: var(--textType1);
 }
 
+div.light .bg-modal {
+    background: var(--background-ContainerVision-Light);
+}
+
+div.dark .bg-modal {
+    background: var(--background-ContainerVision-Dark);
+}
+
 .carousel {
     display: flex;
     align-items: center;
+    overflow: hidden;
     width: 70vw;
     height: 70vh;
     max-width: 716px;
@@ -22,10 +33,21 @@
     border-radius: 15px;
     background: var(--background-Container-Dark);
 }
+
 /* effect in loading carrousel */
-div.light .carousel a{
-    color:#fff;
+div.light .carousel a {
+    color: #fff;
 }
+
+.carousel a {
+    text-decoration: none;
+}
+
+.carousel a:hover h5 {
+    text-decoration: underline;
+    text-underline-offset: 30%;
+}
+
 .container.aside-project {
     padding-bottom: 30px;
 }
@@ -45,14 +67,23 @@ div.light .container.aside-project {
 
 .projects-miniature {
     display: flex;
-    flex-wrap:wrap;
-    gap:35px;
+    flex-wrap: wrap;
+    gap: 35px;
 }
 
 .projects-miniature .miniature {
     display: grid;
     grid-template-columns: auto, auto, auto;
     gap: 10px;
+}
+
+.description {
+    font-size: var(--SizeText6);
+}
+
+.description svg {
+    width: 25px;
+    height: auto;
 }
 
 .skills-miniature {
@@ -69,43 +100,54 @@ div.light .container.aside-project {
     justify-content: center;
 }
 
-.skills-miniature .bi {
+.skills-miniature svg {
     width: 30px;
     height: auto;
-} 
+}
 
 .image-miniature {
-    position: relative;
-    font-family: var(--textType1);
-    font-weight: bold;
     width: 14em;
     height: 9em;
-    border: var(--border-borderLight) solid 2px;
-    border-radius: 8px;
+    position: relative;
     overflow: hidden;
+    font-family: var(--textType1);
+    font-weight: bold;
+    border-radius: 8px;
+    border: var(--border-borderLight) solid 2px;
 }
-.image-miniature h4{
+
+.image-miniature h4 {
     font-size: var(--SizeText3);
-    font-weight: bold ;
+    font-weight: bold;
 }
+
+.skillsIcon svg {
+    width: 35px;
+    height: 35px;
+}
+
+.skillsIcon:hover svg {
+    transform: scale(1.2);
+}
+
 .overlay {
+    display: flex;
     position: absolute;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    bottom: -14%;
+    height: 100%;
+    bottom: -60%;
     opacity: 0;
-    
+    cursor: pointer;
     transition: opacity 0.3s ease-in-out, background 0.6s ease, bottom 0.3s ease-in-out;
 }
-div.light #WAPL .image-miniature{
-    border: #25ac78 solid 2px;
-}
-div.dark #WAPL .image-miniature{
-    border: #ffc400 solid 2px;
-}
-div.dark #WAPL .image-miniature > img{
+
+div.dark #WAPL .image-miniature>img {
     filter: invert(100%);
 }
+
 div.dark .overlay {
     background: rgba(0, 0, 0, 0.61);
 }
@@ -115,7 +157,7 @@ div.light .overlay {
 }
 
 .image-miniature:hover .overlay {
-    opacity: 1;
+    opacity: 0.9;
     bottom: 0%;
 }
 
@@ -129,20 +171,67 @@ div.light .overlay:hover {
 
 
 @media (max-width:540px) {
+    .miniature {
+        width: 100%;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .image-miniature {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .redes-miniature {
+        grid-column: 3;
+        grid-row: 1;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .skills-miniature {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+        display: flex;
+        flex-flow: wrap column;
+        align-items: flex-end;
+        justify-content: center;
+        gap:10px;
+    }
+
     .image-miniature .overlay {
         opacity: 1;
-        bottom: 0%;
+        bottom: -80%;
+        flex-direction: column;
+        justify-content: start;
+
     }
-}
-@media (max-width:596px){
-    .projects-miniature .miniature {
-        transform: scale(1.2);
-        margin:50px auto auto auto;
-        gap:20px;
-    }
-}
-@media (max-width:895px){
-    .projects-miniature {
+
+    .image-miniature:hover .overlay{
         justify-content: center;
+    }
+    .image-miniature:hover .overlay::after{
+        content: 'Ver detalles';
+    }
+
+    /* Carrousel */
+    .carousel {
+        width: 90vw;
+        height: 40vh;
+        margin: 10px 0;
+        padding: 0;
+        border: 0;
+        border-radius: 6px;
+    }
+
+    .carousel-item img {
+        height: 40vh;
+    }
+
+    .carousel-item p {
+        display: none;
     }
 }

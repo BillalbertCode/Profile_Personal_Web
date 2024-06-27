@@ -74,7 +74,7 @@ const About = () => {
             <h2 id="certificaciones">Certificaciones</h2>
             <div className="container-certification">
                <p className="text-certification"><span>FreeCodeCamp </span>
-               <a title="Ver Certificado" target='_Blank' href='https://www.freecodecamp.org/certification/fcc1a56704f-3616-4004-8d9a-3d0a5cf852e3/responsive-web-design'>Responsive Web Design</a> <span class="small-description">(Html, Css and Querys)</span> </p>
+               <a title="Ver Certificado" target='_Blank' href='https://www.freecodecamp.org/certification/fcc1a56704f-3616-4004-8d9a-3d0a5cf852e3/responsive-web-design'>Responsive Web Design</a> <span className="small-description">(Html, Css and Querys)</span> </p>
                <a target='_Blank' className="img-certification-link" href='https://www.freecodecamp.org/certification/fcc1a56704f-3616-4004-8d9a-3d0a5cf852e3/responsive-web-design'><ImageLoader title="Responsive Web Design, Certificado" src="https://bill.caribito.com/bill/src/Certificate_Responsive-Web-Design_Mini.png" className="img-certification" /></a>
             </div>
           </section>

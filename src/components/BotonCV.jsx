@@ -3,7 +3,7 @@ const BotonCV = () => {
     const [alert, setAlert] = useState(null);
     const handleClick = () => {
         setAlert(
-            <div class="alert alert-success" role="alert">
+            <div className="alert alert-success" role="alert">
                 Curriculum Descargado!
             </div>
         );
