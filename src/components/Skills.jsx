@@ -1,78 +1,96 @@
-import "../styles/Skills.css"
+// Rueda de Hard Skills con title and description
+// On Home 
 import { useState, useEffect } from 'react'
+// Icons
 import GitSvg from "../assets/icons/GitSvg"
-import ViteSvg from "../assets/icons/ViteSvg"
-import RRDSvg from "../assets/icons/RRDSvg"
 import CssSvg from "../assets/icons/CssSvg"
 import Html5Svg from "../assets/icons/Html5Svg"
 import JsSvg from "../assets/icons/JsSvg"
 import ReactSvg from "../assets/icons/ReactSvg"
 import NodeJsSvg from "../assets/icons/NodeJsSvg"
+import ExpressSvg from "../assets/icons/ExpressSvg"
+import NextJsSvg from "../assets/icons/NextJsSvg"
+import MongoDbSvg from "../assets/icons/MongoDbSvg"
+import DockerSvg from "../assets/icons/DockerSvg"
+// Estilos
+import "../styles/Skills.css"
 
 const Skills = () => {
     const icons = [
         {
             img: " ",
-            title:" ",
+            title: " ",
             text: " ",
             key: 0
         },
         {
-            img: <CssSvg />,
-            title: "Css",
-            text: "Se encarga del aspecto visual de una página web, controlando el diseño, la presentación y la apariencia de los elementos HTML.",
-            key:1
-        },
-        {
             img: <JsSvg />,
-            title: "JS",
-            key:2,
-            text: "Se emplea para realizar acciones como validación de formularios, animaciones, manipulación del DOM y comunicación con servidores, brindando una experiencia dinámica al usuario."
-        },
-        {
-            img: <Html5Svg />,
-            title: "Html",
-            key:3,
-            text: "Define la estructura y el contenido de una página web, utilizando etiquetas para organizar y presentar información."
+            title: "JavaScript",
+            text: "El lenguaje de programación principal para desarrollo web, tanto del lado del cliente como del servidor. Con JavaScript puedes crear aplicaciones interactivas y dinámicas.",
+            key: 1
         },
         {
             img: <ReactSvg />,
             title: "React",
-            key:4,
-            text: "Biblioteca de JavaScript que permite construir interfaces de usuario mediante componentes reutilizables, basada en el concepto de Virtual DOM."
+            key: 2,
+            text: "Una biblioteca de JavaScript para construir interfaces de usuario. React facilita la creación de componentes reutilizables y el manejo eficiente del estado de las aplicaciones."
         },
         {
             img: <NodeJsSvg />,
-            title: "Node JS",
-            key:5,
-            text: "Se utiliza para construir aplicaciones del lado del servidor. Permite ejecutar JavaScript fuera del navegador, interactuar con bases de datos, manejar solicitudes HTTP y construir aplicaciones web en tiempo real."
+            title: "NodeJS",
+            key: 3,
+            text: "Un entorno de ejecución para JavaScript del lado del servidor. Node.js permite construir aplicaciones escalables y rápidas, especialmente útiles para aplicaciones en tiempo real."
+        },
+        {
+            img: <ExpressSvg />,
+            title: "Express",
+            key: 4,
+            text: "Un framework minimalista para Node.js que facilita la creación de servidores y aplicaciones web robustas y eficientes. Es conocido por su simplicidad y flexibilidad."
+        },
+        {
+            img: <NextJsSvg />,
+            title: "NextJs",
+            key: 5,
+            text: "Un framework para React que permite la renderización del lado del servidor (SSR) y la generación de sitios estáticos (SSG). Next.js es ideal para aplicaciones React con necesidades avanzadas de rendimiento y SEO."
+        },
+        {
+            img: <MongoDbSvg />,
+            title: "MongoDB",
+            key: 6,
+            text: "Una base de datos NoSQL orientada a documentos, conocida por su flexibilidad y escalabilidad. MongoDB es una elección popular para aplicaciones modernas que manejan grandes volúmenes de datos."
+        },
+        {
+            img: <DockerSvg />,
+            title: "Docker",
+            key: 7,
+            text: "Una plataforma de contenedorización que permite empaquetar aplicaciones y sus dependencias en contenedores ligeros y portátiles. Docker asegura consistencia en diferentes entornos de desarrollo y producción."
         },
         {
             img: <GitSvg />,
             title: "Git",
-            key:6,
-            text: "Es esencial para el control de versiones y la colaboración en proyectos de desarrollo. Permite el seguimiento de cambios en el código, la gestión de ramas, la fusión de código y el trabajo colaborativo entre desarrolladores."
+            key: 8,
+            text: "Un sistema de control de versiones distribuido que permite gestionar y mantener un historial de cambios en el código fuente. Git es esencial para el trabajo colaborativo en proyectos de software."
         },
         {
-            img: <ViteSvg />,
-            title: "Vite",
-            key:7,
-            text: "Vite es una herramienta de construcción rápida que mejora la eficiencia del desarrollo web al ofrecer tiempos de compilación más cortos y un entorno de desarrollo ágil para proyectos basados en JavaScript y TypeScript."
+            img: <Html5Svg />,
+            title: "HTML5",
+            key: 9,
+            text: "La última versión del lenguaje de marcado estándar para crear y estructurar páginas web."
         },
         {
-            img: <RRDSvg />,
-            title: "React Router Doom",
-            key:8,
-            text: "Permite la navegación y gestión de rutas en aplicaciones React. Facilita la creación de aplicaciones de una sola página (SPA) al definir diferentes vistas y rutas dentro de la aplicación."
-        },
+            img: <CssSvg />,
+            title: "Css",
+            key: 10,
+            text: "El lenguaje de estilos utilizado para diseñar y estructurar la apariencia visual de las páginas web. CSS permite crear interfaces atractivas y responsivas."
+        }
     ]
 
     const [indexIconSelect, setIndexIconSelect] = useState(2)
 
     const rotateIcons = () => {
         const numberItemSide = 1;
-        return icons.map((icon , index) => {
-            const comparacion = Math.abs(indexIconSelect - index );
+        return icons.map((icon, index) => {
+            const comparacion = Math.abs(indexIconSelect - index);
             if (comparacion <= numberItemSide) {
                 return (
                     <>
