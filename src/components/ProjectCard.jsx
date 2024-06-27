@@ -3,6 +3,8 @@
 import { useState } from "react";
 // Componentes
 import ImageLoader from "./ImageLoader";
+// Funciones
+import { getIconTitle } from "../utils/getIconTitle";
 // Iconos
 import GithubSvg from "../assets/icons/GithubSvg";
 import EnlaceSvg from "../assets/icons/EnlaceSvg";
@@ -30,8 +32,6 @@ const ProjectCard = ({ name, pageLink, githubLink, iconsSkill, imagenes, descrip
     const getLinkTitle = (link) => link.replace('https://github.com/BillalbertCode/', ' ');
 
     // Mostrar title del skill
-    const getIconTitle = (iconName) => iconName.replace('Svg', ' ');
-
     return (
         <div id={name} className="miniature">
             <div className="image-miniature ">
@@ -57,7 +57,7 @@ const ProjectCard = ({ name, pageLink, githubLink, iconsSkill, imagenes, descrip
             <div className="skills-miniature">
                 {iconsSkill.slice(0, 3).map((icon, index) => {
                     return (
-                        <a key={index} title={getIconTitle(icon.type.name)}>
+                        <a key={index} title={getIconTitle(icon)}>
                             {icon}
                         </a>
                     )
@@ -93,7 +93,7 @@ const ProjectCard = ({ name, pageLink, githubLink, iconsSkill, imagenes, descrip
                                 <div className="d-flex gap-2 flex-wrap" >
                                     {iconsSkill.map((icon, index) => {
                                         return (
-                                            <a key={index} className="skillsIcon" title={getIconTitle(icon.type.name)}>
+                                            <a key={index} className="skillsIcon" title={getIconTitle(icon)}>
                                                 {icon}
                                             </a>
                                         )

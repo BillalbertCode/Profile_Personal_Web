@@ -1,4 +1,9 @@
+// Components
 import IndiceAbout from '../components/IndiceAbout';
+import ImageLoader from '../components/ImageLoader';
+// Funciones
+import { getIconTitle } from '../utils/getIconTitle';
+// Icons
 import CssSvg from '../assets/icons/CssSvg'
 import JsSvg from '../assets/icons/JsSvg'
 import Html5Svg from '../assets/icons/Html5Svg'
@@ -8,8 +13,35 @@ import GitSvg from '../assets/icons/GitSvg'
 import ViteSvg from '../assets/icons/ViteSvg'
 import RRDSvg from '../assets/icons/RRDSvg'
 import BootstrapSvg from '../assets/icons/BootstrapSvg';
+import NextJsSvg from '../assets/icons/NextJsSvg';
+import GithubSvg from '../assets/icons/GithubSvg';
+import VercelSvg from '../assets/icons/VercelSvg';
+import RailwaySvg from '../assets/icons/RailwaySvg';
+import MongoAtlasSvg from '../assets/icons/MongoAtlasSvg';
+import DockerSvg from '../assets/icons/DockerSvg';
+import ExpressSvg from '../assets/icons/ExpressSvg';
+import MongooseSvg from '../assets/icons/MongooseSvg';
+import MongoDbSvg from '../assets/icons/MongoDbSvg';
+// Styles
 import '../styles/About.css'
-import ImageLoader from '../components/ImageLoader';
+
+const HabilidadesCard = ({ title, skills }) => {
+  return (
+    <div className="habilidades-container">
+      <h3>{title}</h3>
+      <div className='d-flex gap-1'>
+        {skills.map((icon, index) => {
+          return (
+            <div key={index} title={getIconTitle(icon)}>
+              {icon}
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
 const About = () => {
   return (
     <div className="container About">
@@ -26,44 +58,59 @@ const About = () => {
             Soy un apasionado desarrollador front-end con una firme convicción en la importancia del diseño de experiencias de usuario impactantes. Me he especializado en tecnologías clave como JavaScript, React, y CSS. Constantemente exploro nuevas tendencias y enfoques para crear interfaces visuales atractivas y funcionales.
           </p>
           <p>Utilizo herramientas como Photoshop y Excel para potenciar mi creatividad y habilidades técnicas. Me destaco por entregar proyectos antes de los plazos establecidos, perfeccionando cada detalle.</p>
+          <h2>Habilidades Tecnicas</h2>
           <div className='habilidades flex-initial'>
-            <div className="fundamentos habilidades-container ">
-              <h3>Fundamentos del Desarrollo Web</h3>
-              <div title='Css'>
-                <CssSvg />
-              </div>
-              <div title='JavaScript'>
-                <JsSvg />
-              </div>
-              <div title='HTML 5'>
-                <Html5Svg />
-              </div>
-            </div>
-            <div className="bibliotecas habilidades-container">
-              <h3>Herramientas y Bibliotecas de Desarrollo Front-end</h3>
-              <div title='React'>
-                <ReactSvg />
-              </div>
-              <div title='Boostrap'>
-                <BootstrapSvg />
-              </div>
-              <div title='React Router Doom'>
-                <RRDSvg />
-              </div>
-            </div>
-            <div className="entornoDeEjecucion habilidades-container">
-              <h3>Herramientas de Desarrollo y Entorno de Ejecución</h3>
-              <div title='NodeJs'>
-                <NodeJsSvg />
-              </div>
-              <div title='Git'>
-                <GitSvg />
-              </div>
-              <div title='Vite'>
-                <ViteSvg />
-              </div>
-            </div>
+            <HabilidadesCard
+              title="Control De Versiones"
+              skills={[<GitSvg />, <GithubSvg />]}
+            />
+            <HabilidadesCard
+              title="Herramientas de Desarrollo y Despliegue "
+              skills={[<ViteSvg />, <VercelSvg />, <RailwaySvg />, <MongoAtlasSvg />, <DockerSvg />]}
+            />
           </div>
+
+          <h2>FrontEnd</h2>
+          <div className='habilidades flex-initial'>
+            <HabilidadesCard
+              title="Lenguajes"
+              skills={[<JsSvg />]}
+            />
+            <HabilidadesCard
+              title="Frameworks y Librerias"
+              skills={[<ReactSvg />, <RRDSvg />]}
+            />
+            <HabilidadesCard
+              title="Herramientas de desarrollo"
+              skills={[<ViteSvg />]}
+            />
+            <HabilidadesCard
+              title={"Estilos"}
+              skills={[<CssSvg />, <BootstrapSvg />]}
+            />
+            <HabilidadesCard
+              title="Frameworks de Renderizado"
+              skills={[<NextJsSvg />]}
+            />
+
+          </div>
+
+          <h2>Backend</h2>
+          <div className='habilidades flex-initial'>
+            <HabilidadesCard
+              title="Lenguajes"
+              skills={[<JsSvg />]}
+            />
+            <HabilidadesCard
+              title="Frameworks y Librerias"
+              skills={[<NodeJsSvg />, <ExpressSvg />, <MongooseSvg />]}
+            />
+            <HabilidadesCard
+              title="Base de Datos"
+              skills={[<MongoDbSvg />]}
+            />
+          </div>
+
           <hr />
           <h2 id="educacion">Educación </h2>
           <ul>
@@ -73,16 +120,16 @@ const About = () => {
           <section className='certifications'>
             <h2 id="certificaciones">Certificaciones</h2>
             <div className="container-certification">
-               <p className="text-certification"><span>FreeCodeCamp </span>
-               <a title="Ver Certificado" target='_Blank' href='https://www.freecodecamp.org/certification/fcc1a56704f-3616-4004-8d9a-3d0a5cf852e3/responsive-web-design'>Responsive Web Design</a> <span className="small-description">(Html, Css and Querys)</span> </p>
-               <a target='_Blank' className="img-certification-link" href='https://www.freecodecamp.org/certification/fcc1a56704f-3616-4004-8d9a-3d0a5cf852e3/responsive-web-design'><ImageLoader title="Responsive Web Design, Certificado" src="https://bill.caribito.com/bill/src/Certificate_Responsive-Web-Design_Mini.png" className="img-certification" /></a>
+              <p className="text-certification"><span>FreeCodeCamp </span>
+                <a title="Ver Certificado" target='_Blank' href='https://www.freecodecamp.org/certification/fcc1a56704f-3616-4004-8d9a-3d0a5cf852e3/responsive-web-design'>Responsive Web Design</a> <span className="small-description">(Html, Css and Querys)</span> </p>
+              <a target='_Blank' className="img-certification-link" href='https://www.freecodecamp.org/certification/fcc1a56704f-3616-4004-8d9a-3d0a5cf852e3/responsive-web-design'><ImageLoader title="Responsive Web Design, Certificado" src="https://bill.caribito.com/bill/src/Certificate_Responsive-Web-Design_Mini.png" className="img-certification" /></a>
             </div>
           </section>
           <hr />
           <h2 id="experiencia">Experiencia Laboral</h2>
           <div className="experiencia">
             <h3>Desarrollador FrontEnd.</h3>
-            <h4>  Marzo 2019 - Diciembre 2021.</h4><br/>
+            <h4>  Marzo 2019 - Diciembre 2021.</h4><br />
             <p>Como Desarrollador FrontEnd, colaboré estrechamente con clientes externos para convertir sus visiones en sitios web funcionales y visualmente atractivos. Destaco por:</p>
             <ul>
               <li>
@@ -102,9 +149,9 @@ const About = () => {
                 <p>Utilicé JavaScript, HTML y CSS como lenguajes fundamentales, destacando la importancia de la estética y la funcionalidad en cada proyecto.</p>
               </li>
             </ul>
-            <br/>
+            <br />
             <blockquote className='text-comentary'>Mi enfoque proactivo y habilidades técnicas sólidas aseguraron la entrega exitosa de proyectos mientras mantenía altos estándares de calidad y satisfacción del cliente.</blockquote>
-            <hr/>
+            <hr />
           </div>
           <p></p>
           <h2 id="intereses">Intereses y Aficiones</h2>
@@ -121,7 +168,7 @@ const About = () => {
           <hr />
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
