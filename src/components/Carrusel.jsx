@@ -11,7 +11,7 @@ const Carrusel = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <ImageLoader src="/raicesWorkSpace/Home.png" className="object-fit-cover w-100" alt="RaicesWorkSpace" />
+                    <ImageLoader src="/bill/assets/raicesWorkSpace/Home.png" className="object-fit-cover w-100" alt="RaicesWorkSpace" />
                     <div className="carousel-caption d-block">
                         <a href="https://raicesworkspace.vercel.app" className="">
                             <h5>Raices Work Space  <span>(RWS)</span></h5>
@@ -20,7 +20,7 @@ const Carrusel = () => {
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <ImageLoader src="http://bill.caribito.com/bill/src/Ruletacapture.png" className="object-fit-cover w-100" alt="1" />
+                    <ImageLoader src="/bill/src/Ruletacapture.png" className="object-fit-cover w-100" alt="1" />
                     <div className="carousel-caption d-block">
                         <a href="https://bill.caribito.com/bill/Ruleta/">
                             <h5>Ruleta  <span>(Custom Random Results)</span></h5>
@@ -29,7 +29,7 @@ const Carrusel = () => {
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <ImageLoader src="/wapl/LogoWAPL2White.jpeg" className="object-fit-cover w-100" alt="WAPL" />
+                    <ImageLoader src="/bill/assets/wapl/LogoWAPL2White.jpeg" className="object-fit-cover w-100" alt="WAPL" />
                     <div className="carousel-caption d-block">
                         <a href="https://bill.caribito.com/bill/WAPL/">
                             <h5>WAPL  <span>(WAPL Company)</span></h5>

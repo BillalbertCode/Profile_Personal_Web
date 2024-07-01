@@ -123,14 +123,14 @@ const About = () => {
                 <a title="Ver Certificado" target='_Blank' href='https://www.freecodecamp.org/certification/fcc1a56704f-3616-4004-8d9a-3d0a5cf852e3/responsive-web-design'>Responsive Web Design</a>
                 <span className="small-description">(Html, Css and Querys)</span>
               </p>
-              <a target='_Blank' className="img-certification-link" href='https://www.freecodecamp.org/certification/fcc1a56704f-3616-4004-8d9a-3d0a5cf852e3/responsive-web-design'><ImageLoader title="Responsive Web Design, Certificado" src="https://bill.caribito.com/bill/src/Certificate_Responsive-Web-Design_Mini.png" className="img-certification" /></a>
+              <a target='_Blank' className="img-certification-link" href='https://www.freecodecamp.org/certification/fcc1a56704f-3616-4004-8d9a-3d0a5cf852e3/responsive-web-design'><ImageLoader title="Responsive Web Design, Certificado" src="/bill/src/Certificate_Responsive-Web-Design_Mini.png" className="img-certification" /></a>
             </div>
             <div className="container-certification">
               <p className="text-certification"><span>Microsoft + Linkedin </span>
                 <a title="Ver Certificado" target='_Blank' href='https://www.linkedin.com/learning/certificates/3169680740a110b9d7766a59ff71848faf39ea4c692a38ec7cfa444023e19f93'>Fundamentos Profesionales del Desarrollo de Software </a>
                 <span className="small-description">(Estructura de datos, Phyton and More)</span>
               </p>
-              <a target='_Blank' className="img-certification-link" href='https://www.linkedin.com/learning/certificates/3169680740a110b9d7766a59ff71848faf39ea4c692a38ec7cfa444023e19f93'><ImageLoader title="Fundamento Profesionales del Desarrollo de Softaware" src="/certificaciones/microsoft-desarrollo_de_software.jfif" className="img-certification" /></a>
+              <a target='_Blank' className="img-certification-link" href='https://www.linkedin.com/learning/certificates/3169680740a110b9d7766a59ff71848faf39ea4c692a38ec7cfa444023e19f93'><ImageLoader title="Fundamento Profesionales del Desarrollo de Softaware" src="/bill/assets/certificaciones/microsoft-desarrollo_de_software.jfif" className="img-certification" /></a>
             </div>
           </section>
           <hr />

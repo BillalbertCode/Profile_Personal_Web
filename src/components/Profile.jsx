@@ -9,7 +9,7 @@ const Profile = () => {
   return (
     <>
       <div className='div-img'>
-        <ImageLoader className='img-fluid' src='http://bill.caribito.com/bill/src/YO.jpg' width="100%" height="100%"/>
+        <ImageLoader className='img-fluid' src='/bill/src/YO.jpg' width="100%" height="100%"/>
       </div>
       <section>
         <h1>BILLALBERT MARTINEZ</h1>
