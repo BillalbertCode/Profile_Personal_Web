@@ -27,14 +27,13 @@ jobs:
       - name: Move build files to assets folder
         run: |
           mkdir -p assets
-          mv dist/assets/js/app.js assets/
-          mv dist/assets/css/styles.css assets/
+          cp -r dist/* assets/
 
       - name: Upload to FTP
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
-          ftp-server: 'ftp.caribito.com'
-          ftp-username: ${{ secrets.FTP_USERNAME }}
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          server: 'ftp.caribito.com'
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           local-dir: 'assets'
-          remote-dir: '/assets'
+          server-dir: '/assets'
