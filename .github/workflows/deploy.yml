@@ -3,7 +3,7 @@ name: Deploy to FTP
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -27,7 +27,8 @@ jobs:
       - name: Move build files to assets folder
         run: |
           mkdir -p assets
-          mv dist/* assets/
+          mv dist/assets/js/app.js assets/
+          mv dist/assets/css/styles.css assets/
 
       - name: Upload to FTP
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
@@ -36,4 +37,4 @@ jobs:
           ftp-username: ${{ secrets.FTP_USERNAME }}
           ftp-password: ${{ secrets.FTP_PASSWORD }}
           local-dir: 'assets'
-          remote-dir: '/assets'
+          remote-dir: '/ruta/remota/en/el/servidor/assets'
