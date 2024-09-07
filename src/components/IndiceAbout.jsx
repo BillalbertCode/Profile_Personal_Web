@@ -1,25 +1,25 @@
 const IndiceAbout = () => {
     return (
-        <div className="index-about">
+        <div className="index-about shadow">
             <h5>Contenidos</h5>
             <ul className="list-group">
                 <li className="list-group-item">
-                    <a href="#biografia">Biografía</a>
+                    <a href="/bill/About#biografia" >Biografía</a>
                 </li>
                 <li className="list-group-item">
-                    <a href="#habilidades">Habilidades y Competencias</a>
+                    <a href="/bill/About#habilidades">Habilidades y Competencias</a>
                 </li>
                 <li className="list-group-item">
-                    <a href="#educacion">Educación y Certificaciones</a>
+                    <a href="/bill/About#educacion">Educación y Certificaciones</a>
                 </li>
                 <li className="list-group-item">
-                    <a href="#experiencia">Experiencia Laboral</a>
+                    <a href="/bill/About#experiencia">Experiencia Laboral</a>
                 </li>
                 <li className="list-group-item">
-                    <a href="#intereses">Intereses y Aficiones</a>
+                    <a href="/bill/About#intereses">Intereses y Aficiones</a>
                 </li>
                 <li className="list-group-item">
-                    <a href="#valores">Valores y Objetivos Profesionales</a>
+                    <a href="/bill/About#valores">Valores y Objetivos Profesionales</a>
                 </li>
             </ul>
         </div>

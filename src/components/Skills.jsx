@@ -2,16 +2,18 @@
 // On Home 
 import { useState, useEffect } from 'react'
 // Icons
-import GitSvg from "../assets/icons/GitSvg"
-import CssSvg from "../assets/icons/CssSvg"
-import Html5Svg from "../assets/icons/Html5Svg"
-import JsSvg from "../assets/icons/JsSvg"
-import ReactSvg from "../assets/icons/ReactSvg"
-import NodeJsSvg from "../assets/icons/NodeJsSvg"
-import ExpressSvg from "../assets/icons/ExpressSvg"
-import NextJsSvg from "../assets/icons/NextJsSvg"
-import MongoDbSvg from "../assets/icons/MongoDbSvg"
-import DockerSvg from "../assets/icons/DockerSvg"
+import {
+    GitSvg,
+    CssSvg,
+    Html5Svg,
+    JsSvg,
+    ReactSvg,
+    NodeJsSvg,
+    ExpressSvg,
+    NextJsSvg,
+    MongoDbSvg,
+    DockerSvg
+} from "../assets/icons/SkillIcons"
 // Estilos
 import "../styles/Skills.css"
 

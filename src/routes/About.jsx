@@ -1,26 +1,27 @@
 // Components
 import IndiceAbout from '../components/IndiceAbout';
 import ImageLoader from '../components/ImageLoader';
-// Funciones
-import { getIconTitle } from '../utils/getIconTitle';
 // Icons
-import CssSvg from '../assets/icons/CssSvg'
-import JsSvg from '../assets/icons/JsSvg'
-import ReactSvg from '../assets/icons/ReactSvg'
-import NodeJsSvg from '../assets/icons/NodeJsSvg'
-import GitSvg from '../assets/icons/GitSvg'
-import ViteSvg from '../assets/icons/ViteSvg'
-import RRDSvg from '../assets/icons/RRDSvg'
-import BootstrapSvg from '../assets/icons/BootstrapSvg';
-import NextJsSvg from '../assets/icons/NextJsSvg';
-import GithubSvg from '../assets/icons/GithubSvg';
-import VercelSvg from '../assets/icons/VercelSvg';
-import RailwaySvg from '../assets/icons/RailwaySvg';
-import MongoAtlasSvg from '../assets/icons/MongoAtlasSvg';
-import DockerSvg from '../assets/icons/DockerSvg';
-import ExpressSvg from '../assets/icons/ExpressSvg';
-import MongooseSvg from '../assets/icons/MongooseSvg';
-import MongoDbSvg from '../assets/icons/MongoDbSvg';
+import {
+  CssSvg,
+  JsSvg,
+  ReactSvg,
+  NodeJsSvg,
+  GitSvg,
+  ViteSvg,
+  RRDSvg,
+  BootstrapSvg,
+  NextJsSvg,
+  GithubSvg,
+  VercelSvg,
+  RailwaySvg,
+  MongoAtlasSvg,
+  DockerSvg,
+  ExpressSvg,
+  MongooseSvg,
+  MongoDbSvg
+} from '../assets/icons/SkillIcons'
+
 // Styles
 import '../styles/About.css'
 
@@ -29,13 +30,7 @@ const HabilidadesCard = ({ title, skills }) => {
     <div className="habilidades-container">
       <h3>{title}</h3>
       <div className='d-flex gap-1'>
-        {skills.map((icon, index) => {
-          return (
-            <div key={index} title={getIconTitle(icon)}>
-              {icon}
-            </div>
-          )
-        })}
+        {skills.map((icon) => icon)}
       </div>
     </div>
   )
@@ -61,11 +56,11 @@ const About = () => {
           <div className='habilidades flex-initial'>
             <HabilidadesCard
               title="Control De Versiones"
-              skills={[<GitSvg />, <GithubSvg />]}
+              skills={[<GitSvg key={0} />, <GithubSvg key={1} />]}
             />
             <HabilidadesCard
               title="Herramientas de Desarrollo y Despliegue "
-              skills={[<ViteSvg />, <VercelSvg />, <RailwaySvg />, <MongoAtlasSvg />, <DockerSvg />]}
+              skills={[<ViteSvg key={0} />, <VercelSvg key={1} />, <RailwaySvg key={2} />, <MongoAtlasSvg key={3} />, <DockerSvg key={4} />]}
             />
           </div>
 
@@ -73,23 +68,23 @@ const About = () => {
           <div className='habilidades flex-initial'>
             <HabilidadesCard
               title="Lenguajes"
-              skills={[<JsSvg />]}
+              skills={[<JsSvg key={0} />]}
             />
             <HabilidadesCard
               title="Frameworks y Librerias"
-              skills={[<ReactSvg />, <RRDSvg />]}
+              skills={[<ReactSvg key={0} />, <RRDSvg key={1} />]}
             />
             <HabilidadesCard
               title="Herramientas de desarrollo"
-              skills={[<ViteSvg />]}
+              skills={[<ViteSvg key={0} />]}
             />
             <HabilidadesCard
               title={"Estilos"}
-              skills={[<CssSvg />, <BootstrapSvg />]}
+              skills={[<CssSvg key={0} />, <BootstrapSvg key={1} />]}
             />
             <HabilidadesCard
               title="Frameworks de Renderizado"
-              skills={[<NextJsSvg />]}
+              skills={[<NextJsSvg key={0} />]}
             />
 
           </div>
@@ -98,15 +93,15 @@ const About = () => {
           <div className='habilidades flex-initial'>
             <HabilidadesCard
               title="Lenguajes"
-              skills={[<JsSvg />]}
+              skills={[<JsSvg key={0} />]}
             />
             <HabilidadesCard
               title="Frameworks y Librerias"
-              skills={[<NodeJsSvg />, <ExpressSvg />, <MongooseSvg />]}
+              skills={[<NodeJsSvg key={0} />, <ExpressSvg key={1} />, <MongooseSvg key={2} />]}
             />
             <HabilidadesCard
               title="Base de Datos"
-              skills={[<MongoDbSvg />]}
+              skills={[<MongoDbSvg key={0} />]}
             />
           </div>
 

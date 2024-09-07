@@ -13,8 +13,8 @@ const BotonCV = () => {
     }
 
 
-    const rutaCVEspañol = "/bill/src/Curriculum%20FrontEnd.pdf"
-    const rutaCVEnglish = "/bill/src/Resume%20FrontEnd.pdf"
+    const rutaCVEspañol = "/bill/assets/public/Billalbert_Martinez_FrontEnd.pdf"
+    const rutaCVEnglish = "/bill/assets/public/Billalbert_Martinez_FrontEnd_Resume.pdf"
     return (
         <>
             <a onClick={handleClick} className='ButtonLink' id="CV">

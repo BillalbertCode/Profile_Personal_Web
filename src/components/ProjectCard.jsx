@@ -3,10 +3,8 @@
 import { useState } from "react";
 // Componentes
 import ImageLoader from "./ImageLoader";
-// Funciones
-import { getIconTitle } from "../utils/getIconTitle";
 // Iconos
-import GithubSvg from "../assets/icons/GithubSvg";
+import { GithubSvg } from "../assets/icons/SkillIcons";
 import EnlaceSvg from "../assets/icons/EnlaceSvg";
 /**
  * 
@@ -57,7 +55,7 @@ const ProjectCard = ({ name, pageLink, githubLink, iconsSkill, imagenes, descrip
             <div className="skills-miniature">
                 {iconsSkill.slice(0, 3).map((icon, index) => {
                     return (
-                        <a key={index} title={getIconTitle(icon)}>
+                        <a key={index}>
                             {icon}
                         </a>
                     )
@@ -93,7 +91,7 @@ const ProjectCard = ({ name, pageLink, githubLink, iconsSkill, imagenes, descrip
                                 <div className="d-flex gap-2 flex-wrap" >
                                     {iconsSkill.map((icon, index) => {
                                         return (
-                                            <a key={index} className="skillsIcon" title={getIconTitle(icon)}>
+                                            <a key={index} className="skillsIcon" >
                                                 {icon}
                                             </a>
                                         )

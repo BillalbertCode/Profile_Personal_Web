@@ -4,21 +4,24 @@
 // Components
 import Carrusel from "../components/Carrusel"
 import ProjectCard from "../components/ProjectCard"
+
 // Icons
-import Html5Svg from "../assets/icons/Html5Svg"
-import JsSvg from "../assets/icons/JsSvg"
-import CssSvg from "../assets/icons/CssSvg"
-import ReactSvg from "../assets/icons/ReactSvg"
-import BootstrapSvg from "../assets/icons/BootstrapSvg"
-import NextJsSvg from "../assets/icons/NextJsSvg"
-import NodeJsSvg from "../assets/icons/NodeJsSvg"
-import ExpressSvg from "../assets/icons/ExpressSvg"
-import MongoDbSvg from "../assets/icons/MongoDbSvg"
-import MongooseSvg from "../assets/icons/MongooseSvg"
-import DockerSvg from "../assets/icons/DockerSvg"
-import JwtSvg from "../assets/icons/JwtSvg"
-import VercelSvg from "../assets/icons/VercelSvg"
-import RailwaySvg from "../assets/icons/RailwaySvg"
+import {
+  Html5Svg,
+  JsSvg,
+  CssSvg,
+  ReactSvg,
+  BootstrapSvg,
+  NextJsSvg,
+  NodeJsSvg,
+  ExpressSvg,
+  MongoDbSvg,
+  MongooseSvg,
+  DockerSvg,
+  JwtSvg,
+  VercelSvg,
+  RailwaySvg
+} from "../assets/icons/SkillIcons"
 
 // Estilos
 import "../styles/Projects.css"
