@@ -116,9 +116,13 @@ div.dark main #CV {
 
 div.dark main #Project:hover,
 div.dark main #About:hover,
-div.dark main #CV:hover,
-.container-curriculum a:hover {
+div.dark main #CV:hover {
     filter: brightness(150%);
+}
+
+.container-curriculum a:hover {
+    filter: brightness(125%);
+    transition: filter 0.2s linear;
 }
 
 div.light main #CV {
@@ -141,28 +145,33 @@ div.light main #CV:hover {
     cursor: pointer;
     border-radius: 10px 10px 10px 3px;
 }
-.container-curriculum{
+
+.container-curriculum {
     display: none;
 }
-#CV:hover .container-curriculum{
+
+#CV:hover .container-curriculum {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     position: absolute;
-    right:11%;
-    top:90%;
-    width:90% ;
+    right: 11%;
+    top: 90%;
+    width: 90%;
     margin-top: 2px;
-    border:1px solid #000;
+    border: 1px solid #000;
     border-top: 0px;
 }
-.container-curriculum a{
+
+.container-curriculum a {
     text-decoration: none;
 }
-div.light .container-curriculum a{
-    background-color:var(--button-CV-Light);
+
+div.light .container-curriculum a {
+    background-color: var(--button-CV-Light);
 }
-div.dark .container-curriculum a{
-    background-color:var(--button-CV-Dark);
+
+div.dark .container-curriculum a {
+    background-color: var(--button-CV-Dark);
 }
 
 @media (max-width: 540px) {
@@ -203,5 +212,5 @@ div.dark .container-curriculum a{
         grid-row: 2 / 2;
         grid-column: 1 / 3;
     }
-    
+
 }

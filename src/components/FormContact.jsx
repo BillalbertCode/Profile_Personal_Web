@@ -1,7 +1,8 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import { useState, useEffect } from 'react';
-import RepeatSvg from '../assets/icons/RepeatSvg';
+// Icons
+import { RepeatSvg } from '../assets/icons/UtilsIcons';
 const FormContact = () => {
     const [state, handleSubmit, reset] = useForm("xayrnnql");
 
@@ -21,7 +22,7 @@ const FormContact = () => {
     const handleReset = () => {
         reset()
     }
-    
+
     if (state.succeeded) {
         return (
             <div className="contact-section">

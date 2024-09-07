@@ -1,11 +1,10 @@
 import '../styles/nav.css'
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+// Contexto
 import { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
-import HouseSvg from '../assets/icons/HouseSvg';
-import ConsoleSvg from '../assets/icons/ConsoleSvg';
-import InfoSvg from '../assets/icons/InfoSvg';
-import TelephoneSvg from '../assets/icons/TelephoneSvg';
+// Icons
+import { ConsoleSvg, HouseSvg, InfoSvg, TelephoneSvg } from '../assets/icons/UtilsIcons';
 const Nav = () => {
     const { theme, themeToogle } = useContext(ThemeContext)
     return (

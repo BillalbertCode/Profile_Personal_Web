@@ -1,7 +1,10 @@
-import InfoSvg from "../assets/icons/InfoSvg"
-import "../styles/Footer.css"
-import SocialNetworks from "./SocialNetworks"
 import { Link } from "react-router-dom"
+// Estilos
+import "../styles/Footer.css"
+// Components
+import SocialNetworks from "./SocialNetworks"
+// Icons
+import { InfoSvg } from "../assets/icons/UtilsIcons"
 const Footer = () => {
     return (
         <footer>
@@ -31,10 +34,10 @@ const Footer = () => {
                 </div>
             </div>
             <div className="copiright">
-                <hr/>
+                <hr />
                 <p>© Billalbert Martinez - @BillalbertCode </p>
                 <Link title="Mas Informacion" to="/bill/About">
-                    <InfoSvg/>
+                    <InfoSvg />
                 </Link>
             </div>
         </footer>

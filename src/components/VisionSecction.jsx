@@ -1,9 +1,7 @@
 import "../styles/VisionSecction.css"
-import CppSVg from "../assets/icons/CppSVg"
+import {CppSVg, MySqlSvg, PhytonSvg } from "../assets/icons/SkillIcons"
 import DataBase from "../assets/icons/DataBase"
-import MySqlSvg from "../assets/icons/MySqlSvg"
 import PCDisplay from "../assets/icons/PCDisplay"
-import PhytonSvg from "../assets/icons/PhytonSvg"
 import Server from "../assets/icons/ServerSvg"
 const VisionSecction = () => {
     return (
