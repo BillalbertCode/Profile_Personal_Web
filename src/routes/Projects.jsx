@@ -43,6 +43,14 @@ const Projects = () => {
         </div>
         <div className="projects-miniature">
           <ProjectCard
+            name="JobChatbotAI"
+            pageLink="https://job-chatbot-ia.vercel.app/"
+            githubLink={["https://github.com/BillalbertCode/job-chatbot-ia"]}
+            iconsSkill={[, <TypescriptSvg />, <ReactSvg />, <TailwindSvg />]}
+            imagenes={["/bill/assets/jobChatbotIA/heroJobChatbot.webp", "/bill/assets/jobChatbotIA/muestra1.webp", "/bill/assets/jobChatbotIA/muestra2.webp", "/bill/assets/jobChatbotIA/muestra3.webp"]}
+            descripcion="Chatbot Inteligente enfocado en la asistencia de Trabajo, con uso interactivo de Herramientas. creado con el LLM Gemini y IA SDK para facilicitar la creacion del chatbot."
+          />
+          <ProjectCard
             name="RaicesWorkSpace"
             pageLink="https://raicesworkspace.vercel.app"
             githubLink={["https://github.com/BillalbertCode/RaicesWorkSpace_Frontend", "https://github.com/BillalbertCode/RaicesWorkSpace_Backend"]}
@@ -75,14 +83,7 @@ const Projects = () => {
             imagenes={["/bill/assets/wapl/LogoWAPL2White.jpeg", "/bill/assets/wapl/muestra1.png", "/bill/assets/wapl/muestra2.png"]}
             descripcion="En este proyecto, me encargué de desarrollar una página estática de ropa utilizando tecnologías frontend como HTML y CSS. Mi objetivo era crear una página atractiva y fácil de navegar que permitiera a los usuarios explorar y descubrir nuestra colección de ropa."
           />
-          <ProjectCard
-            name="Job Chatbot AI"
-            pageLink="https://job-chatbot-ia.vercel.app/"
-            githubLink={["https://github.com/BillalbertCode/job-chatbot-ia"]}
-            iconsSkill={[<NextJsSvg/>, <TypescriptSvg/>, <ReactSvg/>,<TailwindSvg/>]}
-            imagenes={["/bill/assets/jobChatbotIA/heroJobChatbot.webp","/bill/assets/jobChatbotIA/muestra1.webp","/bill/assets/jobChatbotIA/muestra2.webp","/bill/assets/jobChatbotIA/muestra3.webp"]}
-            descripcion="Chatbot Inteligente enfocado en la asistencia de Trabajo, con uso interactivo de Herramientas. creado con el LLM Gemini y IA SDK para facilicitar la creacion del chatbot."
-          />
+
         </div>
       </aside>
     </div>
