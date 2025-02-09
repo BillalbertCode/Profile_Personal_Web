@@ -20,7 +20,9 @@ import {
   DockerSvg,
   JwtSvg,
   VercelSvg,
-  RailwaySvg
+  RailwaySvg,
+  TypescriptSvg,
+  TailwindSvg
 } from "../assets/icons/SkillIcons"
 
 // Estilos
@@ -50,10 +52,10 @@ const Projects = () => {
               <div className="description">
                 <p>Raíces, una plataforma WorkSpace para compartir tus pensamientos y creaciones con la comunidad.</p>
                 <h6>FrontEnd</h6>
-                <p>Desarrollado con tecnologías como React <ReactSvg /> y NextJs <NextJsSvg /> utilizando consumo de APIS y manejo de cokies para la sesion de usuario , la aplicacion por parte del FrontEnd fue desplegada con Vercel <VercelSvg /></p>
+                <p>Desarrollado con tecnologías como React y NextJs utilizando consumo de APIS y manejo de cokies para la sesion de usuario , la aplicacion por parte del FrontEnd fue desplegada con Vercel </p>
                 <h6>BackEnd</h6>
-                <p>Desarrollado con NodeJs <NodeJsSvg /> y Express <ExpressSvg /> para el manejo de rutas, Mongoose <MongooseSvg /> para el modelado de usuarios y articles de MongoDB junto con JWT <JwtSvg /> para la autenticacion de usuario.</p>
-                <p> Docker <DockerSvg /> para despliegue del backend y uso de manera remota y el despliegue del Backend en Railaway <RailwaySvg /> y la base de datos en MongoAtlas<MongoDbSvg /> </p>
+                <p>Desarrollado con NodeJs y Express para el manejo de rutas, Mongoose para el modelado de usuarios y articles de MongoDB junto con JWT para la autenticacion de usuario.</p>
+                <p> Docker para despliegue del backend y uso de manera remota y el despliegue del Backend en Railaway y la base de datos en MongoAtlas</p>
               </div>
             }
           />
@@ -72,6 +74,14 @@ const Projects = () => {
             iconsSkill={[<Html5Svg />, <CssSvg />]}
             imagenes={["/bill/assets/wapl/LogoWAPL2White.jpeg", "/bill/assets/wapl/muestra1.png", "/bill/assets/wapl/muestra2.png"]}
             descripcion="En este proyecto, me encargué de desarrollar una página estática de ropa utilizando tecnologías frontend como HTML y CSS. Mi objetivo era crear una página atractiva y fácil de navegar que permitiera a los usuarios explorar y descubrir nuestra colección de ropa."
+          />
+          <ProjectCard
+            name="Job Chatbot AI"
+            pageLink="https://job-chatbot-ia.vercel.app/"
+            githubLink={["https://github.com/BillalbertCode/job-chatbot-ia"]}
+            iconsSkill={[<NextJsSvg/>, <TypescriptSvg/>, <ReactSvg/>,<TailwindSvg/>]}
+            imagenes={["/bill/assets/jobChatbotIA/heroJobChatbot.webp","/bill/assets/jobChatbotIA/muestra1.webp","/bill/assets/jobChatbotIA/muestra2.webp","/bill/assets/jobChatbotIA/muestra3.webp"]}
+            descripcion="Chatbot Inteligente enfocado en la asistencia de Trabajo, con uso interactivo de Herramientas. creado con el LLM Gemini y IA SDK para facilicitar la creacion del chatbot."
           />
         </div>
       </aside>
