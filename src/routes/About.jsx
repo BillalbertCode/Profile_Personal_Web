@@ -19,7 +19,8 @@ import {
   DockerSvg,
   ExpressSvg,
   MongooseSvg,
-  MongoDbSvg
+  MongoDbSvg,
+  TypescriptSvg
 } from '../assets/icons/SkillIcons'
 
 // Styles
@@ -68,7 +69,7 @@ const About = () => {
           <div className='habilidades flex-initial'>
             <HabilidadesCard
               title="Lenguajes"
-              skills={[<JsSvg key={0} />]}
+              skills={[<JsSvg key={0} />, <TypescriptSvg key={1}/>]}
             />
             <HabilidadesCard
               title="Frameworks y Librerias"
@@ -93,7 +94,7 @@ const About = () => {
           <div className='habilidades flex-initial'>
             <HabilidadesCard
               title="Lenguajes"
-              skills={[<JsSvg key={0} />]}
+              skills={[<JsSvg key={0} />, <TypescriptSvg key={1}/>]}
             />
             <HabilidadesCard
               title="Frameworks y Librerias"
@@ -126,6 +127,13 @@ const About = () => {
                 <span className="small-description">(Estructura de datos, Phyton and More)</span>
               </p>
               <a target='_Blank' className="img-certification-link" href='https://www.linkedin.com/learning/certificates/3169680740a110b9d7766a59ff71848faf39ea4c692a38ec7cfa444023e19f93'><ImageLoader title="Fundamento Profesionales del Desarrollo de Softaware" src="/bill/assets/certificaciones/microsoft-desarrollo_de_software.jfif" className="img-certification" /></a>
+            </div>
+            <div className="container-certification">
+              <p className="text-certification"><span>Platzi</span>
+                <a title="Ver Certificado" target='_Blank' href='https://platzi.com/p/billalbertcode/curso/2879-typescript-tipos-avanzados/diploma/detalle/'>TypeScript </a>
+                <span className="small-description">(Tipos Avanzados y Funciones)</span>
+              </p>
+              <a target='_Blank' className="img-certification-link" href='https://platzi.com/p/billalbertcode/curso/2879-typescript-tipos-avanzados/diploma/detalle/'><ImageLoader title="Typescript: Tipos Avanzados y Funciones" src="/bill/assets/certificaciones/diploma-typescript-tipos-avanzados.webp" className="img-certification" /></a>
             </div>
           </section>
           <hr />

@@ -46,7 +46,7 @@ const Projects = () => {
             name="JobChatbotAI"
             pageLink="https://job-chatbot-ia.vercel.app/"
             githubLink={["https://github.com/BillalbertCode/job-chatbot-ia"]}
-            iconsSkill={[, <TypescriptSvg />, <ReactSvg />, <TailwindSvg />]}
+            iconsSkill={[<NextJsSvg/>, <TypescriptSvg />, <ReactSvg />, <TailwindSvg />]}
             imagenes={["/bill/assets/jobChatbotIA/heroJobChatbot.webp", "/bill/assets/jobChatbotIA/muestra1.webp", "/bill/assets/jobChatbotIA/muestra2.webp", "/bill/assets/jobChatbotIA/muestra3.webp"]}
             descripcion="Chatbot Inteligente enfocado en la asistencia de Trabajo, con uso interactivo de Herramientas. creado con el LLM Gemini y IA SDK para facilicitar la creacion del chatbot."
           />
