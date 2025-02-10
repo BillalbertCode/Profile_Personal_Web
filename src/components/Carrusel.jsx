@@ -11,6 +11,15 @@ const Carrusel = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
+                    <ImageLoader src="/bill/assets/jobChatbotIA/heroJobChatbot.webp" className="object-fit-cover w-100" alt="Job Chatbot IA" />
+                    <div className="carousel-caption d-block">
+                        <a href="https://job-chatbot-ia.vercel.app/">
+                            <h5>Job Chatbot IA  <span>(Geminis IA)</span></h5>
+                            <p >Un pequeño chatbot inteligente dispuesto a ayudarte con tu trabajo.</p>
+                        </a>
+                    </div>
+                </div>
+                <div className="carousel-item">
                     <ImageLoader src="/bill/assets/raicesWorkSpace/Home.png" className="object-fit-cover w-100" alt="RaicesWorkSpace" />
                     <div className="carousel-caption d-block">
                         <a href="https://raicesworkspace.vercel.app" className="">
@@ -25,15 +34,6 @@ const Carrusel = () => {
                         <a href="https://bill.caribito.com/bill/Ruleta/">
                             <h5>Ruleta  <span>(Custom Random Results)</span></h5>
                             <p >Ruleta de 4 segmentos, personalizable.</p>
-                        </a>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <ImageLoader src="/bill/assets/wapl/LogoWAPL2White.jpeg" className="object-fit-cover w-100" alt="WAPL" />
-                    <div className="carousel-caption d-block">
-                        <a href="https://bill.caribito.com/bill/WAPL/">
-                            <h5>WAPL  <span>(WAPL Company)</span></h5>
-                            <p >Una tienda virtual de ropa atractiva y fácil de navegar </p>
                         </a>
                     </div>
                 </div>
