@@ -1,6 +1,6 @@
 import './styles/App.css'
-import React, { useContext } from 'react'
-import { Navigate, Route, Routes } from 'react-router-dom'
+import { useContext } from 'react'
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import Inicio from './routes/Inicio'
 import Contact from './routes/Contact'
 import Projects from './routes/Projects'
@@ -15,10 +15,15 @@ import ScrollToTop from './components/ScrollToTop'
 
 const App = () => {
   const { theme } = useContext(ThemeContext)
+  const location = useLocation()
+  
+  // Rutas donde NO se debe mostrar la navegación ni el footer
+  const isDeprecationPath = location.pathname === '/bill' || location.pathname === '/bill/Home' || location.pathname === '/'
+
   return (
     <div className={theme ? "dark" : "light"}>  
-      <DeprecationBanner />
-      <Nav />
+      {!isDeprecationPath && <DeprecationBanner />}
+      {!isDeprecationPath && <Nav />}
       <ScrollToTop/>
       <Routes >
         <Route path='/bill' element={<DeprecationPage />}></Route>
@@ -30,7 +35,7 @@ const App = () => {
         <Route path='/bill/*' element={<ErrorPage />}></Route>
         <Route path='/' element={<Navigate to='/bill' />}></Route>
       </Routes>
-      <Footer />
+      {!isDeprecationPath && <Footer />}
     </div>
   )
 }

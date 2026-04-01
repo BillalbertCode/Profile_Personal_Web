@@ -11,12 +11,12 @@ const Nav = () => {
         <>
             <nav id="navcss" className="navbar  navbar-expand-lg sticky-top" >
                 <div className="container-fluid">
-                    <NavLink title="Home" to='/bill/Home' id="HomeNav"  >
+                    <NavLink title="Home" to='/bill' id="HomeNav"  >
                         <HouseSvg />
                     </NavLink>
                     <div className="nav justify-content-end" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                            <NavLink to="/bill/Home" id="Inicio" className="nav-link">
+                            <NavLink to="/bill" id="Inicio" className="nav-link">
                                 <p>Inicio</p>
                                 <HouseSvg />
                             </NavLink>

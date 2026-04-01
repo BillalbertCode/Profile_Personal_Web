@@ -1,101 +1,103 @@
-.deprecation-page {
+.nextjs-layout {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
-  padding: 40px 20px;
-  text-align: center;
+  min-height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 20px;
+  background-color: #000 !important; /* Fondo negro absoluto */
+  color: #fff !important; /* Texto blanco absoluto */
 }
 
-.deprecation-content {
-  max-width: 700px;
+.nextjs-layout * {
+  background-color: transparent !important;
+}
+
+.nextjs-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 25px;
-  padding: 40px;
-  border-radius: 15px;
-  background-color: var(--background-SmallContainer-Light);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+  max-width: 800px;
+  width: 100%;
+  padding: 0 20px;
+  
 }
 
-.dark .deprecation-content {
-  background-color: #101222;
-  border: 1px solid var(--border-borderLight);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-.deprecation-title {
+.nextjs-title {
   font-family: var(--textType1);
-  font-size: var(--SizeText1);
+  font-size: 3.5rem;
+  font-weight: 800;
   margin: 0;
-  line-height: 1.2;
+  text-align: left;
+  letter-spacing: -2px;
 }
 
-.dark .deprecation-title {
-  color: var(--text-FooterSubtitles-Dark);
+.nextjs-divider-horizontal {
+  width: 100%;
+  height: 1px;
+  background-color: #333; /* Gris oscuro para el divisor */
+  margin: 32px 0;
 }
 
-.deprecation-message {
-  font-family: var(--textType2);
-  font-size: var(--SizeText2);
-  margin: 0;
-  color: var(--text-LighterText-Light);
-}
-
-.dark .deprecation-message {
-  color: var(--text-LighterText-Dark);
-}
-
-.deprecation-image-container {
-  width: 250px;
-  height: 250px;
+.nextjs-bottom-section {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  border: 2px dashed var(--border-borderLight);
-  border-radius: 10px;
-  margin: 10px 0;
+  gap: 40px;
+  width: 100%;
 }
 
-.deprecation-image-placeholder {
+.nextjs-message {
   font-family: var(--textType2);
-  font-style: italic;
-  opacity: 0.7;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+  color: #a1a1a1; /* Gris claro para el mensaje */
 }
 
-.deprecation-link {
-  display: inline-block;
-  padding: 15px 30px;
-  background-color: var(--button-CV-Dark);
-  color: white !important;
-  text-decoration: none;
-  border-radius: 8px;
-  font-family: var(--textType1);
-  font-weight: bold;
-  font-size: var(--SizeText4);
-  transition: all 0.3s ease;
+.nextjs-link {
+  color: #fff !important;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-left: 5px;
+  transition: opacity 0.2s ease;
 }
 
-.light .deprecation-link {
-  background-color: var(--text-FooterSubtitles-Light);
+.nextjs-link:hover {
+  opacity: 0.8;
 }
 
-.deprecation-link:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  filter: brightness(1.1);
+.nextjs-image-wrapper {
+  flex-shrink: 0;
 }
 
-@media (max-width: 600px) {
-  .deprecation-title {
-    font-size: var(--SizeText2);
+.nextjs-image {
+  width: 160px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+  filter: grayscale(20%); /* Un toque más sobrio */
+}
+
+/* Responsivo para móviles */
+@media (max-width: 650px) {
+  .nextjs-title {
+    font-size: 2.2rem;
+    letter-spacing: -1px;
   }
-  .deprecation-message {
-    font-size: var(--SizeText4);
+  
+  .nextjs-bottom-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
   }
-  .deprecation-image-container {
-    width: 200px;
-    height: 200px;
+  
+  .nextjs-image {
+    width: 130px;
   }
 }
