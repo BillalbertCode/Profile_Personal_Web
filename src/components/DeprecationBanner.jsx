@@ -5,7 +5,7 @@ const DeprecationBanner = () => {
   return (
     <div className="deprecation-banner">
       <div className="deprecation-banner-content">
-        <span>⚠️ Este sitio web está deprecado. Visita mi nuevo portafolio: </span>
+        <span> IMPORTANTE!! Este sitio web está deprecado. Visita mi nuevo portafolio: </span>
         <a 
           href="https://billalbertcode.vercel.app/" 
           target="_blank" 

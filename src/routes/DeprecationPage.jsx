@@ -9,8 +9,8 @@ const DeprecationPage = () => {
         
         <div className="nextjs-bottom-section">
           <p className="nextjs-message">
-            ¡Hola! Qué gusto encontrarte en este lugar tan desolado. 
-            Quiero informarte que hemos mudado de sitio y cambiado de portafolio, será un gusto verte allá.
+            ¡Hola! Qué gusto encontrarte en este lugar tan solitario. 
+            Quiero informarte que he mudado de sitio y cambiado de portafolio, será un gusto verte allá.
             <a href="https://billalbertcode.vercel.app/" className="nextjs-link"> Visita el nuevo portafolio aquí.</a>
           </p>
           <div className="nextjs-image-wrapper">
