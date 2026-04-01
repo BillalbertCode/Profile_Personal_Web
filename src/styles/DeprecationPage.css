@@ -1,0 +1,101 @@
+.deprecation-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.deprecation-content {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 40px;
+  border-radius: 15px;
+  background-color: var(--background-SmallContainer-Light);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dark .deprecation-content {
+  background-color: #101222;
+  border: 1px solid var(--border-borderLight);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.deprecation-title {
+  font-family: var(--textType1);
+  font-size: var(--SizeText1);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.dark .deprecation-title {
+  color: var(--text-FooterSubtitles-Dark);
+}
+
+.deprecation-message {
+  font-family: var(--textType2);
+  font-size: var(--SizeText2);
+  margin: 0;
+  color: var(--text-LighterText-Light);
+}
+
+.dark .deprecation-message {
+  color: var(--text-LighterText-Dark);
+}
+
+.deprecation-image-container {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed var(--border-borderLight);
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.deprecation-image-placeholder {
+  font-family: var(--textType2);
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.deprecation-link {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--button-CV-Dark);
+  color: white !important;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: var(--textType1);
+  font-weight: bold;
+  font-size: var(--SizeText4);
+  transition: all 0.3s ease;
+}
+
+.light .deprecation-link {
+  background-color: var(--text-FooterSubtitles-Light);
+}
+
+.deprecation-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+}
+
+@media (max-width: 600px) {
+  .deprecation-title {
+    font-size: var(--SizeText2);
+  }
+  .deprecation-message {
+    font-size: var(--SizeText4);
+  }
+  .deprecation-image-container {
+    width: 200px;
+    height: 200px;
+  }
+}

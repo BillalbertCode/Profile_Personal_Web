@@ -1,0 +1,38 @@
+.deprecation-banner {
+  background-color: #ffb800;
+  color: #000;
+  padding: 12px 20px;
+  text-align: center;
+  font-family: var(--textType1);
+  font-weight: bold;
+  font-size: var(--SizeText5);
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.deprecation-banner-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.deprecation-banner a {
+  color: #000215 !important;
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+}
+
+.deprecation-banner a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .deprecation-banner {
+    font-size: var(--SizeText6);
+    padding: 8px 15px;
+  }
+}

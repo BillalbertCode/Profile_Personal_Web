@@ -6,23 +6,29 @@ import Contact from './routes/Contact'
 import Projects from './routes/Projects'
 import About from './routes/About'
 import ErrorPage from './routes/ErrorPage'
+import DeprecationPage from './routes/DeprecationPage'
 import Nav from './components/Nav'
+import DeprecationBanner from './components/DeprecationBanner'
 import { ThemeContext } from './context/ThemeContext'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
+
 const App = () => {
   const { theme } = useContext(ThemeContext)
   return (
     <div className={theme ? "dark" : "light"}>  
+      <DeprecationBanner />
       <Nav />
       <ScrollToTop/>
       <Routes >
-        <Route path='/bill/Home' element={<Inicio />}></Route>
+        <Route path='/bill' element={<DeprecationPage />}></Route>
+        <Route path='/bill/Home' element={<DeprecationPage />}></Route>
+        <Route path='/bill/home-deprecated' element={<Inicio />}></Route>
         <Route path='/bill/Projects' element={<Projects />}></Route>
         <Route path='/bill/About' element={<About />}></Route>
         <Route path='/bill/Contact' element={<Contact />}></Route>
-        <Route path='/bill' element= {<Navigate to= '/bill/Home'/>}></Route>
         <Route path='/bill/*' element={<ErrorPage />}></Route>
+        <Route path='/' element={<Navigate to='/bill' />}></Route>
       </Routes>
       <Footer />
     </div>
