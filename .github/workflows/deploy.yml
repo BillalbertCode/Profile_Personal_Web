@@ -1,4 +1,4 @@
-name: Deploy to FTP
+name: Deploy to Production (/bill)
 
 on:
   push:
@@ -6,17 +6,17 @@ on:
       - main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '14'
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install
@@ -24,16 +24,12 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Move build files to assets folder
-        run: |
-          mkdir -p assets
-          cp -r dist/* assets/
-
       - name: Upload to FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        uses: SamKirkland/FTP-Deploy-Action@4.3.5
         with:
           server: 'ftp.caribito.com'
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: 'assets/'
-          server-dir: '/assets/'
+          local-dir: './dist/'
+          server-dir: '/bill/'
+          # Este plugin maneja los deltas, solo subirá lo que cambie
