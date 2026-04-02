@@ -24,6 +24,16 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Create physical routes for static hosting
+        run: |
+          # Crear los directorios físicos dentro de dist
+          mkdir -p dist/About dist/Contact dist/Home dist/Projects
+          # Copiar el index.html principal a cada subdirectorio
+          cp dist/index.html dist/About/index.html
+          cp dist/index.html dist/Contact/index.html
+          cp dist/index.html dist/Home/index.html
+          cp dist/index.html dist/Projects/index.html
+
       - name: Upload to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
