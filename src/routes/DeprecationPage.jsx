@@ -14,7 +14,7 @@ const DeprecationPage = () => {
             <a href="https://billalbertcode.vercel.app/" className="nextjs-link"> Visita el nuevo portafolio aquí.</a>
           </p>
           <div className="nextjs-image-wrapper">
-            <img src="./assets/src/nos-mudamos.webp" alt="Nos mudamos" className="nextjs-image" />
+            <img src="./src/nos-mudamos.webp" alt="Nos mudamos" className="nextjs-image" />
           </div>
         </div>
       </main>
